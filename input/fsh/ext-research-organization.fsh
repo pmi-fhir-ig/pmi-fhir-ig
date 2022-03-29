@@ -1,43 +1,55 @@
-Extension: PMIResearchPairingType
-Id: pmiresearch-pairing-type
+Extension: PMIPairingEntityType
+Id: pmipairing-entity-type
 Title: "PMI Research Pairing Organization Type"
+Description: "Type of entity that Participant is paired with"
 * ^status = #draft
 * value[x] 1..1
 * value[x] only code
-* value[x] from PMIResearchPairingTypeCodes (required)
+* value[x] from PMIPairingTypeCodes (required)
 
-Extension: PMIResearchPairingName
-Id: pmiresearch-pairing-name
-Title: "PMI Research Pairing Organization Name"
+Extension: PMIPairingEntityCode
+Id: pmipairing-entity-code
+Title: "PMI Pairing Entity Code"
+Description: "Code for the entity that Participant is paired with"
 * ^status = #draft
 * value[x] 1..1
 * value[x] only string
 
-Extension: PMIResearchPairingOrganization
-Id: pmiresearch-pairing-organization
-Title: "PMI Research Pairing Organization"
-Description: "Organization that Participant is paired with"
+Extension: PMIPairingEntityName
+Id: pmipairing-entity-name
+Title: "PMI Pairing Entity Name"
+Description: "Name of the entity that Participant is paired with"
+* ^status = #draft
+* value[x] 1..1
+* value[x] only string
+
+Extension: PMIPairingEntities
+Id: pmipairing-entities
+Title: "PMI Pairing Entities"
+Description: "Entities that Participant is paired with"
 * ^status = #draft
 * . 0..3 MS
 * extension contains
-    PMIResearchPairingType named type 0..1 and
-    PMIResearchPairingName named pairing 0..1 
+    PMIPairingEntityType named type 1..1 and
+    PMIPairingEntityName named entity 1..1 and
+    PMIPairingEntityCode named code 1..1
 * extension[type] 1..1 MS
-* extension[pairing] 1..1 MS
+* extension[entity] 1..1 MS
+* extension[code] 1..1 MS
 
 
-CodeSystem: PMIResearchPairingTypeCodeSystem
-Id: pmiresearch-pairing-type-code-system
-Title: "PMI Research Pairing Type CodeSystem"
-Description: "Pairing Type Codes"
+CodeSystem: PMIPairingTypeCodeSystem
+Id: pmipairing-type-code-system
+Title: "PMI Pairing Type CodeSystem"
+Description: "Pairing Type CodeSystem for identifying type of pairing entity"
 * ^meta.versionId = "1"
 * #awardee "Awardee"
 * #organization "Organization"
 * #site "Site"
 
-ValueSet: PMIResearchPairingTypeCodes
-Id: pmiresearch-pairing-type-codes
-Title: "PMI Research Pairing Type Codes"
-Description: "Pairing Type Codes"
-* include codes from system PMIResearchPairingTypeCodeSystem
+ValueSet: PMIPairingTypeCodes
+Id: pmipairing-type-codes
+Title: "PMI Pairing Type Codes"
+Description: "Pairing Type Codes for identifying type of pairing entity"
+* include codes from system PMIPairingTypeCodeSystem
 

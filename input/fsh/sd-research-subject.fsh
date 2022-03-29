@@ -6,7 +6,7 @@ Description: "Research Subject for PMI Program"
 * ^meta.versionId = "1"
 * modifierExtension 0..0
 * extension contains
-    PMIResearchPairingOrganization named pairingOrganization 0..3 MS
+    PMIPairingEntities named pairedEntities 0..3 MS
 * identifier 2..2 MS
   * ^short = "Identifiers for the participant"
   * ^slicing.discriminator.type = #value
