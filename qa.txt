@@ -3,7 +3,7 @@
 
 err = 0, warn = 13, info = 1
 IG Publisher Version: 1.1.113
-Generated Tue Mar 29 01:30:20 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.0 (canonical = https://pmi-ops.org/fhir)
+Generated Tue Mar 29 01:42:56 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.0 (canonical = https://pmi-ops.org/fhir)
  Build Errors : 0 / 2 / 0
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/CodeSystem-pmiresearch-pairing-type-code-system : 0 / 0 / 2
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ImplementationGuide-fhir.us.pmi.ig : 0 / 0 / 1
