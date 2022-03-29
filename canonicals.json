@@ -1,0 +1,58 @@
+[
+  {
+    "id": "pmiresearch-pairing-type-code-system",
+    "type": "CodeSystem",
+    "url": "https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system",
+    "version": "0.1.0",
+    "name": "PMIResearchPairingTypeCodeSystem"
+  },
+  {
+    "id": "fhir.us.pmi.ig",
+    "type": "ImplementationGuide",
+    "url": "https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig",
+    "version": "0.1.0",
+    "name": "PMICoreIG"
+  },
+  {
+    "id": "pmi-patient",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient",
+    "version": "0.1.0",
+    "name": "PMIPatient"
+  },
+  {
+    "id": "pmiresearch-pairing-name",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-name",
+    "version": "0.1.0",
+    "name": "PMIResearchPairingName"
+  },
+  {
+    "id": "pmiresearch-pairing-organization",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-organization",
+    "version": "0.1.0",
+    "name": "PMIResearchPairingOrganization"
+  },
+  {
+    "id": "pmiresearch-pairing-type",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-type",
+    "version": "0.1.0",
+    "name": "PMIResearchPairingType"
+  },
+  {
+    "id": "pmiresearch-subject",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject",
+    "version": "0.1.0",
+    "name": "PMIResearchSubject"
+  },
+  {
+    "id": "pmiresearch-pairing-type-codes",
+    "type": "ValueSet",
+    "url": "https://pmi-ops.org/fhir/ValueSet/pmiresearch-pairing-type-codes",
+    "version": "0.1.0",
+    "name": "PMIResearchPairingTypeCodes"
+  }
+]

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="f37f6670-978b-43f5-9d47-806b9819101c"/>
+  <meta>
+    <lastUpdated value="2022-03-29T01:30:00.921+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://pmi-ops.org/fhir/ValueSet/pmiresearch-pairing-type-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="pmiresearch-pairing-type-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-pmiresearch-pairing-type-code-system.html">PMI Research Pairing Type CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-pmiresearch-pairing-type-code-system.html">
+                <code>https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-ops.org-fhir-CodeSystem-pmiresearch-pairing-type-code-system-awardee"> </a>  
+                  <a href="CodeSystem-pmiresearch-pairing-type-code-system.html#pmiresearch-pairing-type-code-system-awardee">awardee</a>
+                </td>
+                <td>Awardee</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-ops.org-fhir-CodeSystem-pmiresearch-pairing-type-code-system-organization"> </a>  
+                  <a href="CodeSystem-pmiresearch-pairing-type-code-system.html#pmiresearch-pairing-type-code-system-organization">organization</a>
+                </td>
+                <td>Organization</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-ops.org-fhir-CodeSystem-pmiresearch-pairing-type-code-system-site"> </a>  
+                  <a href="CodeSystem-pmiresearch-pairing-type-code-system.html#pmiresearch-pairing-type-code-system-site">site</a>
+                </td>
+                <td>Site</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://pmi-ops.org/fhir/ValueSet/pmiresearch-pairing-type-codes"/>
+        <version value="0.1.0"/>
+        <name value="PMIResearchPairingTypeCodes"/>
+        <title value="PMI Research Pairing Type Codes"/>
+        <status value="active"/>
+        <date value="2022-03-29T01:30:00+00:00"/>
+        <publisher value="Vibrent Health"/>
+        <contact>
+          <name value="Vibrent Health"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://vibrenthealth.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Addy Naik"/>
+          <telecom>
+            <system value="email"/>
+            <value value="anaik@vibrenthealth.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Daniel Uribe"/>
+          <telecom>
+            <system value="email"/>
+            <value value="duribe@vibrenthealth.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Pairing Type Codes"/>
+        <expansion>
+          <identifier value="urn:uuid:3be96937-2797-4c2c-8424-e135141c020a"/>
+          <timestamp value="2022-03-29T01:30:14+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system"/>
+            <code value="awardee"/>
+            <display value="Awardee"/>
+          </contains>
+          <contains>
+            <system value="https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system"/>
+            <code value="organization"/>
+            <display value="Organization"/>
+          </contains>
+          <contains>
+            <system value="https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system"/>
+            <code value="site"/>
+            <display value="Site"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>
