@@ -14,23 +14,23 @@ Description: "Research Subject for PMI Program"
   * ^slicing.rules = #closed
   * ^isModifier = false
   * assigner 0..0
-  * use = #official
-  * use ^short = official
-  * use ^isModifier = false
-  * use 1..1 MS
-  * type 1..1 MS
-  * type = #XX
-  * system 1..1 MS
-  * value 1..1 MS
 * identifier contains PTSCID 1..1 MS
 * identifier[PTSCID]
   * ^short = "PTSC ID for the research subject"
   * system = "https://pmi-ops.org/fhir/systems/ptsc-id"
+  * use = #official
+  * use 1..1 MS
+  * type = #XX
+  * type 1..1 MS
   * value ^short = "PTSC Identifier"
 * identifier contains PMIID 1..1 MS
 * identifier[PMIID]
   * ^short = "PMI Participant ID for the research subject"
   * system = "https://pmi-ops.org/fhir/systems/participant-id"
+  * use = #official
+  * use 1..1 MS
+  * type = #XX
+  * type 1..1 MS
   * value ^short = "Participant Identifier for PMI"
 * status 1..1 MS 
 * status
@@ -49,3 +49,47 @@ Description: "Research Subject for PMI Program"
   * ^short = "Primary consent for the participant"
 * assignedArm 0..0
 * actualArm 0..0
+
+
+Instance: ResearchSubjectActive
+InstanceOf: PMIResearchSubject
+Usage: #example
+Title: "Research Subject Active"
+Description: "Participant who has completed primary consent and is active"
+* identifier[PTSCID].use = #official
+* identifier[PTSCID].type = #XX
+* identifier[PTSCID].system = "https://pmi-ops.org/fhir/systems/ptsc-id"
+* identifier[PTSCID].value = "289392892"
+* identifier[PMIID].use = #official
+* identifier[PMIID].type = #XX
+* identifier[PMIID].system = "https://pmi-ops.org/fhir/systems/participant-id"
+* identifier[PMIID].value = "P201004920"
+* status = #on-study
+* period
+  * start = "2022-01-13T12:00:29+00:00"
+* individual = Reference(PMIPatientExample)
+* study = Reference(PMIResearchStudy)
+* consent = Reference(PMIPrimaryConsent)
+
+Instance: PMIResearchStudy
+InstanceOf: ResearchStudy
+Usage: #example
+Title: "Research Subject Active"
+Description: "Participant who has completed primary consent and is active"
+* id = "PMI"
+* status = #active
+
+Instance: PMIPatientExample
+InstanceOf: PMIPatient
+Usage: #example
+Title: "PMI Patient Example"
+Description: "Participant patient record"
+
+Instance: PMIPrimaryConsent
+InstanceOf: Consent
+Usage: #example
+Title: "PMI Primary Consenrt"
+Description: "Participants primary consent"
+* status = #active
+* scope = #research
+* category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research
