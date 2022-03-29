@@ -88,7 +88,7 @@ Description: "Participant patient record"
 Instance: PMIPrimaryConsent
 InstanceOf: Consent
 Usage: #example
-Title: "PMI Primary Consenrt"
+Title: "PMI Primary Consent"
 Description: "Participants primary consent"
 * status = #active
 * scope = #research
