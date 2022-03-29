@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "PMIResearchPairingOrganization"];
   fhir:StructureDefinition.title [ fhir:value "PMI Research Pairing Organization"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-29T01:42:38+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-29T02:49:17+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Vibrent Health"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
