@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "PMICoreIG",
   "status": "draft",
-  "date": "2022-03-29T02:49:17+00:00",
+  "date": "2022-03-29T03:43:36+00:00",
   "publisher": "Vibrent Health",
   "contact": [
     {
@@ -386,9 +386,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pmiresearch-pairing-name"
+          "reference": "StructureDefinition/pmipairing-entities"
         },
-        "name": "PMI Research Pairing Organization Name",
+        "name": "PMI Pairing Entities",
+        "description": "Entities that Participant is paired with",
         "exampleBoolean": false
       },
       {
@@ -399,10 +400,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pmiresearch-pairing-organization"
+          "reference": "StructureDefinition/pmipairing-entity-code"
         },
-        "name": "PMI Research Pairing Organization",
-        "description": "Organization that Participant is paired with",
+        "name": "PMI Pairing Entity Code",
+        "description": "Code for the entity that Participant is paired with",
         "exampleBoolean": false
       },
       {
@@ -413,9 +414,24 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pmiresearch-pairing-type"
+          "reference": "StructureDefinition/pmipairing-entity-name"
+        },
+        "name": "PMI Pairing Entity Name",
+        "description": "Name of the entity that Participant is paired with",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pmipairing-entity-type"
         },
         "name": "PMI Research Pairing Organization Type",
+        "description": "Type of entity that Participant is paired with",
         "exampleBoolean": false
       },
       {
@@ -426,10 +442,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/pmiresearch-pairing-type-codes"
+          "reference": "ValueSet/pmipairing-type-codes"
         },
-        "name": "PMI Research Pairing Type Codes",
-        "description": "Pairing Type Codes",
+        "name": "PMI Pairing Type Codes",
+        "description": "Pairing Type Codes for identifying type of pairing entity",
         "exampleBoolean": false
       },
       {
@@ -440,10 +456,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/pmiresearch-pairing-type-code-system"
+          "reference": "CodeSystem/pmipairing-type-code-system"
         },
-        "name": "PMI Research Pairing Type CodeSystem",
-        "description": "Pairing Type Codes",
+        "name": "PMI Pairing Type CodeSystem",
+        "description": "Pairing Type CodeSystem for identifying type of pairing entity",
         "exampleBoolean": false
       }
     ],

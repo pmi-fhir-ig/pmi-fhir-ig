@@ -1,25 +1,25 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3d732682-e199-4e87-af0b-6dfe08eaae5b",
+  "id" : "3c4b476c-41ca-49ab-978e-f441a6f9d7aa",
   "meta" : {
-    "lastUpdated" : "2022-03-29T02:49:17.042+00:00"
+    "lastUpdated" : "2022-03-29T03:43:36.371+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "https://pmi-ops.org/fhir/ValueSet/pmiresearch-pairing-type-codes",
+    "fullUrl" : "https://pmi-ops.org/fhir/ValueSet/pmipairing-type-codes",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "pmiresearch-pairing-type-codes",
+      "id" : "pmipairing-type-codes",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-pmiresearch-pairing-type-code-system.html\">PMI Research Pairing Type CodeSystem v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-pmiresearch-pairing-type-code-system.html\"><code>https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---pmi-ops.org-fhir-CodeSystem-pmiresearch-pairing-type-code-system-awardee\"> </a>  <a href=\"CodeSystem-pmiresearch-pairing-type-code-system.html#pmiresearch-pairing-type-code-system-awardee\">awardee</a></td><td>Awardee</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---pmi-ops.org-fhir-CodeSystem-pmiresearch-pairing-type-code-system-organization\"> </a>  <a href=\"CodeSystem-pmiresearch-pairing-type-code-system.html#pmiresearch-pairing-type-code-system-organization\">organization</a></td><td>Organization</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---pmi-ops.org-fhir-CodeSystem-pmiresearch-pairing-type-code-system-site\"> </a>  <a href=\"CodeSystem-pmiresearch-pairing-type-code-system.html#pmiresearch-pairing-type-code-system-site\">site</a></td><td>Site</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-pmipairing-type-code-system.html\">PMI Pairing Type CodeSystem v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-pmipairing-type-code-system.html\"><code>https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---pmi-ops.org-fhir-CodeSystem-pmipairing-type-code-system-awardee\"> </a>  <a href=\"CodeSystem-pmipairing-type-code-system.html#pmipairing-type-code-system-awardee\">awardee</a></td><td>Awardee</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---pmi-ops.org-fhir-CodeSystem-pmipairing-type-code-system-organization\"> </a>  <a href=\"CodeSystem-pmipairing-type-code-system.html#pmipairing-type-code-system-organization\">organization</a></td><td>Organization</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---pmi-ops.org-fhir-CodeSystem-pmipairing-type-code-system-site\"> </a>  <a href=\"CodeSystem-pmipairing-type-code-system.html#pmipairing-type-code-system-site\">site</a></td><td>Site</td></tr></table></div>"
       },
-      "url" : "https://pmi-ops.org/fhir/ValueSet/pmiresearch-pairing-type-codes",
+      "url" : "https://pmi-ops.org/fhir/ValueSet/pmipairing-type-codes",
       "version" : "0.1.0",
-      "name" : "PMIResearchPairingTypeCodes",
-      "title" : "PMI Research Pairing Type Codes",
+      "name" : "PMIPairingTypeCodes",
+      "title" : "PMI Pairing Type Codes",
       "status" : "active",
-      "date" : "2022-03-29T02:49:17+00:00",
+      "date" : "2022-03-29T03:43:36+00:00",
       "publisher" : "Vibrent Health",
       "contact" : [{
         "name" : "Vibrent Health",
@@ -44,10 +44,10 @@
           "use" : "work"
         }]
       }],
-      "description" : "Pairing Type Codes",
+      "description" : "Pairing Type Codes for identifying type of pairing entity",
       "expansion" : {
-        "identifier" : "urn:uuid:89359cf9-9759-4887-a094-7adcc4be61cd",
-        "timestamp" : "2022-03-29T02:49:28+00:00",
+        "identifier" : "urn:uuid:9cffa9b0-4703-45fe-8e7e-519d47bbd0bd",
+        "timestamp" : "2022-03-29T03:43:47+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -55,20 +55,20 @@
         },
         {
           "name" : "version",
-          "valueUri" : "https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system|0.1.0"
+          "valueUri" : "https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system|0.1.0"
         }],
         "contains" : [{
-          "system" : "https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system",
+          "system" : "https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system",
           "code" : "awardee",
           "display" : "Awardee"
         },
         {
-          "system" : "https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system",
+          "system" : "https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system",
           "code" : "organization",
           "display" : "Organization"
         },
         {
-          "system" : "https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system",
+          "system" : "https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system",
           "code" : "site",
           "display" : "Site"
         }]

@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="PMICoreIG"/>
   <status value="draft"/>
-  <date value="2022-03-29T02:49:17+00:00"/>
+  <date value="2022-03-29T03:43:36+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -249,9 +249,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pmiresearch-pairing-name"/>
+        <reference value="StructureDefinition/pmipairing-entities"/>
       </reference>
-      <name value="PMI Research Pairing Organization Name"/>
+      <name value="PMI Pairing Entities"/>
+      <description value="Entities that Participant is paired with"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -259,10 +260,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pmiresearch-pairing-organization"/>
+        <reference value="StructureDefinition/pmipairing-entity-code"/>
       </reference>
-      <name value="PMI Research Pairing Organization"/>
-      <description value="Organization that Participant is paired with"/>
+      <name value="PMI Pairing Entity Code"/>
+      <description value="Code for the entity that Participant is paired with"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -270,9 +271,21 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pmiresearch-pairing-type"/>
+        <reference value="StructureDefinition/pmipairing-entity-name"/>
+      </reference>
+      <name value="PMI Pairing Entity Name"/>
+      <description value="Name of the entity that Participant is paired with"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pmipairing-entity-type"/>
       </reference>
       <name value="PMI Research Pairing Organization Type"/>
+      <description value="Type of entity that Participant is paired with"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -280,10 +293,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/pmiresearch-pairing-type-codes"/>
+        <reference value="ValueSet/pmipairing-type-codes"/>
       </reference>
-      <name value="PMI Research Pairing Type Codes"/>
-      <description value="Pairing Type Codes"/>
+      <name value="PMI Pairing Type Codes"/>
+      <description value="Pairing Type Codes for identifying type of pairing entity"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -291,10 +304,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/pmiresearch-pairing-type-code-system"/>
+        <reference value="CodeSystem/pmipairing-type-code-system"/>
       </reference>
-      <name value="PMI Research Pairing Type CodeSystem"/>
-      <description value="Pairing Type Codes"/>
+      <name value="PMI Pairing Type CodeSystem"/>
+      <description value="Pairing Type CodeSystem for identifying type of pairing entity"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

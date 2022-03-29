@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:ResearchSubject</sch:title>
     <sch:rule context="f:ResearchSubject">
-      <sch:assert test="count(f:extension[@url = 'https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-organization']) &lt;= 3">extension with URL = 'https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-organization': maximum cardinality of 'extension' is 3</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities']) &lt;= 3">extension with URL = 'https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities': maximum cardinality of 'extension' is 3</sch:assert>
       <sch:assert test="count(f:modifierExtension) &lt;= 0">modifierExtension: maximum cardinality of 'modifierExtension' is 0</sch:assert>
       <sch:assert test="count(f:period) &gt;= 1">period: minimum cardinality of 'period' is 1</sch:assert>
       <sch:assert test="count(f:assignedArm) &lt;= 0">assignedArm: maximum cardinality of 'assignedArm' is 0</sch:assert>

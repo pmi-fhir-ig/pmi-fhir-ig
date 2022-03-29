@@ -1,10 +1,10 @@
 [
   {
-    "id": "pmiresearch-pairing-type-code-system",
+    "id": "pmipairing-type-code-system",
     "type": "CodeSystem",
-    "url": "https://pmi-ops.org/fhir/CodeSystem/pmiresearch-pairing-type-code-system",
+    "url": "https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system",
     "version": "0.1.0",
-    "name": "PMIResearchPairingTypeCodeSystem"
+    "name": "PMIPairingTypeCodeSystem"
   },
   {
     "id": "fhir.us.pmi.ig",
@@ -21,25 +21,32 @@
     "name": "PMIPatient"
   },
   {
-    "id": "pmiresearch-pairing-name",
+    "id": "pmipairing-entities",
     "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-name",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities",
     "version": "0.1.0",
-    "name": "PMIResearchPairingName"
+    "name": "PMIPairingEntities"
   },
   {
-    "id": "pmiresearch-pairing-organization",
+    "id": "pmipairing-entity-code",
     "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-organization",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code",
     "version": "0.1.0",
-    "name": "PMIResearchPairingOrganization"
+    "name": "PMIPairingEntityCode"
   },
   {
-    "id": "pmiresearch-pairing-type",
+    "id": "pmipairing-entity-name",
     "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-type",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name",
     "version": "0.1.0",
-    "name": "PMIResearchPairingType"
+    "name": "PMIPairingEntityName"
+  },
+  {
+    "id": "pmipairing-entity-type",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type",
+    "version": "0.1.0",
+    "name": "PMIPairingEntityType"
   },
   {
     "id": "pmiresearch-subject",
@@ -49,10 +56,10 @@
     "name": "PMIResearchSubject"
   },
   {
-    "id": "pmiresearch-pairing-type-codes",
+    "id": "pmipairing-type-codes",
     "type": "ValueSet",
-    "url": "https://pmi-ops.org/fhir/ValueSet/pmiresearch-pairing-type-codes",
+    "url": "https://pmi-ops.org/fhir/ValueSet/pmipairing-type-codes",
     "version": "0.1.0",
-    "name": "PMIResearchPairingTypeCodes"
+    "name": "PMIPairingTypeCodes"
   }
 ]

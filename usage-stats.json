@@ -4,15 +4,8 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-name",
-      "title": "PMI Research Pairing Organization Name",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-organization",
-      "title": "PMI Research Pairing Organization",
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities",
+      "title": "PMI Pairing Entities",
       "types": [
         "base64Binary",
         "boolean",
@@ -67,7 +60,21 @@
       ]
     },
     {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-type",
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code",
+      "title": "PMI Pairing Entity Code",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name",
+      "title": "PMI Pairing Entity Name",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type",
       "title": "PMI Research Pairing Organization Type",
       "types": [
         "code"
@@ -125,13 +132,16 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-name": [
-      "Extension"
-    ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-organization": [
+    "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities": [
       "ResearchSubject"
     ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-type": [
+    "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code": [
+      "Extension"
+    ],
+    "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name": [
+      "Extension"
+    ],
+    "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type": [
       "Extension"
     ]
   }

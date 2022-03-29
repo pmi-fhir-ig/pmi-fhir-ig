@@ -24,8 +24,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ResearchSubject.extension","pairingOrganization","","",0,3,"Y","","","Extension {[CanonicalType[https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-pairing-organization]]} {[]}
-","PMI Research Pairing Organization","Organization that Participant is paired with","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"ResearchSubject.extension","pairedEntities","","",0,3,"Y","","","Extension {[CanonicalType[https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities]]} {[]}
+","PMI Pairing Entities","Entities that Participant is paired with","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchSubject.modifierExtension","","","",0,0,"","Y","","Extension {[]} {[]}

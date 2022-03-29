@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "pmipairing-type-code-system",
+  "meta": {
+    "versionId": "1"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">awardee<a name=\"pmipairing-type-code-system-awardee\"> </a></td><td>Awardee</td></tr><tr><td style=\"white-space:nowrap\">organization<a name=\"pmipairing-type-code-system-organization\"> </a></td><td>Organization</td></tr><tr><td style=\"white-space:nowrap\">site<a name=\"pmipairing-type-code-system-site\"> </a></td><td>Site</td></tr></table></div>"
+  },
+  "url": "https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system",
+  "version": "0.1.0",
+  "name": "PMIPairingTypeCodeSystem",
+  "title": "PMI Pairing Type CodeSystem",
+  "status": "active",
+  "date": "2022-03-29T03:43:36+00:00",
+  "publisher": "Vibrent Health",
+  "contact": [
+    {
+      "name": "Vibrent Health",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://vibrenthealth.com"
+        }
+      ]
+    },
+    {
+      "name": "Addy Naik",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "anaik@vibrenthealth.com",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Uribe",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "duribe@vibrenthealth.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Pairing Type CodeSystem for identifying type of pairing entity",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "awardee",
+      "display": "Awardee"
+    },
+    {
+      "code": "organization",
+      "display": "Organization"
+    },
+    {
+      "code": "site",
+      "display": "Site"
+    }
+  ]
+}
