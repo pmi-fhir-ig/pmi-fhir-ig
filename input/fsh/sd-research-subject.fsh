@@ -56,14 +56,14 @@ InstanceOf: PMIResearchSubject
 Usage: #example
 Title: "Research Subject Active"
 Description: "Participant who has completed primary consent and is active"
-* identifier[PTSCID].use = #official
-* identifier[PTSCID].type = #XX
-* identifier[PTSCID].system = "https://pmi-ops.org/fhir/systems/ptsc-id"
-* identifier[PTSCID].value = "289392892"
-* identifier[PMIID].use = #official
-* identifier[PMIID].type = #XX
-* identifier[PMIID].system = "https://pmi-ops.org/fhir/systems/participant-id"
-* identifier[PMIID].value = "P201004920"
+* identifier[0].use = #official
+* identifier[=].type = #XX
+* identifier[=].system = "https://pmi-ops.org/fhir/systems/ptsc-id"
+* identifier[=].value = "289392892"
+* identifier[+].use = #official
+* identifier[=].type = #XX
+* identifier[=].system = "https://pmi-ops.org/fhir/systems/participant-id"
+* identifier[=].value = "P201004920"
 * status = #on-study
 * period
   * start = "2022-01-13T12:00:29+00:00"
