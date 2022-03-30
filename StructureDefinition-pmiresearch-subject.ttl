@@ -29,7 +29,7 @@
   fhir:StructureDefinition.name [ fhir:value "PMIResearchSubject"];
   fhir:StructureDefinition.title [ fhir:value "PMI Research Subject"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-30T01:18:45+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-30T15:49:01+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Vibrent Health"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
