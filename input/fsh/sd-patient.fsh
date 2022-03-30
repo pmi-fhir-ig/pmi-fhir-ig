@@ -4,9 +4,20 @@ Id: pmi-patient
 Title: "PMI Patient"
 Description: "Participant profile"
 * identifier 0..1 MS
+  * ^short = "Identifiers for the patient"
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #closed
+  * ^isModifier = false
+  * assigner 0..0
+  * period 0..0
+* identifier contains SSN 0..1 MS
+* identifier[SSN]
+  * ^short = "Social Security Number for the patient"
+  * system = "http://hl7.org/fhir/sid/us-ssn"
   * use = #official
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#SS
-  * system = "http://hl7.org/fhir/sid/us-ssn"
+  * value ^short = "Social Security Number"
 * active 0..0
 * name 0..1 MS
 * name
