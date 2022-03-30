@@ -64,6 +64,7 @@ parameters:
   propagate-status: true
   show-inherited-invariants: false
   excludettl: true
+  default-version: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
