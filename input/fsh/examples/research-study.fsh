@@ -1,7 +1,7 @@
 Instance: PMIResearchStudy
 InstanceOf: ResearchStudy
 Usage: #example
-Title: "Research Subject Active"
-Description: "Participant who has completed primary consent and is active"
+Title: "Research Study"
+Description: "PMI Research Program"
 * id = "PMI"
 * status = #active
