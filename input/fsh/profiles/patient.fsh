@@ -38,5 +38,10 @@ Description: "Participant profile"
   * relationship 0..1 MS
   * relationship = http://terminology.hl7.org/CodeSystem/v2-0131#CP
   * name 1..1 MS
+  * gender 0..0
   * organization 0..0 
+  * period 0..0
 * generalPractitioner 0..0
+* managingOrganization 0..0
+* link 0..0
+
