@@ -5,7 +5,7 @@ Title: "PMI Patient"
 Description: "Participant profile"
 * identifier 0..1 MS
   * use = #official
-  * type = #SS
+  * type = http://terminology.hl7.org/CodeSystem/v2-0203#SS
   * system = "http://hl7.org/fhir/sid/us-ssn"
 * active 0..0
 * name 0..1 MS
@@ -23,8 +23,7 @@ Description: "Participant profile"
 * address MS
   * use 1..1 MS
   * use = #home
-  * type ^short = "postal (MAILING) | physical (ACCOUNT)"
-  * line 0..2 MS
+  * type ^short = "postal (MAILING) | physical (ACCOUNT)"  * line 0..2 MS
   * city MS
   * district MS
   * state MS
@@ -35,7 +34,7 @@ Description: "Participant profile"
 * contact MS
   * ^short = "Secondary Contacts for the Patient"
   * relationship 0..1 MS
-  * relationship = #CP
+  * relationship = http://terminology.hl7.org/CodeSystem/v2-0131#CP
   * name 1..1 MS
   * organization 0..0 
 * generalPractitioner 0..0
