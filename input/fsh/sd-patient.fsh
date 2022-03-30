@@ -63,6 +63,8 @@ Description: "Participant profile"
   * name 1..1 MS
   * organization 0..0 
 * generalPractitioner 0..0
+* managingOrganization 0..0
+* link 0..0
 
 Instance: PMIPatientWithName
 InstanceOf: PMIPatient
