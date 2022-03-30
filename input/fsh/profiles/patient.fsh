@@ -36,6 +36,7 @@ Description: "Participant profile"
   * extension 0..1
   * extension contains
     PMIVerified named verifiedAddress 0..1 MS
+* multipleBirth[x] 0..0
 * maritalStatus 0..0 
 * photo 0..0
 * contact MS
