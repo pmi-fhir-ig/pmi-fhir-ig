@@ -29,3 +29,6 @@ Description: "Physican Measurement records for the participant"
     * version 0..0
     * system MS
     * code MS
+* value[x] 1..1
+* value[x][valueQuantity]
+  * comparator 0..0
