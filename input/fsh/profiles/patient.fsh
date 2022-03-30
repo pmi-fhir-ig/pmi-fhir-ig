@@ -42,6 +42,7 @@ Description: "Participant profile"
   * state MS
   * postalCode MS
   * country MS
+* multipleBirth[x] 0..0
 * maritalStatus 0..0 
 * photo 0..0
 * contact MS
