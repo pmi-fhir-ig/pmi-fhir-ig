@@ -1,5 +1,5 @@
 Extension: PMIPairingEntityType
-Id: pmipairing-entity-type
+Id: pmi-pairing-entity-type
 Title: "PMI Research Pairing Organization Type"
 Description: "Type of entity that Participant is paired with"
 * ^status = #draft
@@ -8,7 +8,7 @@ Description: "Type of entity that Participant is paired with"
 * value[x] from PMIPairingTypeCodes (required)
 
 Extension: PMIPairingEntityCode
-Id: pmipairing-entity-code
+Id: pmi-pairing-entity-code
 Title: "PMI Pairing Entity Code"
 Description: "Code for the entity that Participant is paired with"
 * ^status = #draft
@@ -16,7 +16,7 @@ Description: "Code for the entity that Participant is paired with"
 * value[x] only string
 
 Extension: PMIPairingEntityName
-Id: pmipairing-entity-name
+Id: pmi-pairing-entity-name
 Title: "PMI Pairing Entity Name"
 Description: "Name of the entity that Participant is paired with"
 * ^status = #draft
@@ -24,7 +24,7 @@ Description: "Name of the entity that Participant is paired with"
 * value[x] only string
 
 Extension: PMIPairingEntities
-Id: pmipairing-entities
+Id: pmi-pairing-entities
 Title: "PMI Pairing Entities"
 Description: "Entities that Participant is paired with"
 * ^status = #draft
@@ -37,20 +37,4 @@ Description: "Entities that Participant is paired with"
 * extension[entity] 1..1 MS
 * extension[code] 1..1 MS
 
-
-CodeSystem: PMIPairingTypeCodeSystem
-Id: pmipairing-type-code-system
-Title: "PMI Pairing Type CodeSystem"
-Description: "Pairing Type CodeSystem for identifying type of pairing entity"
-* ^meta.versionId = "1"
-* ^caseSensitive = false
-* #awardee "Awardee" "Awardee Entity for participants"
-* #organization "Organization"  "Organization Entity for participants"
-* #site "Site" "Site Entity for participants"
-
-ValueSet: PMIPairingTypeCodes
-Id: pmipairing-type-codes
-Title: "PMI Pairing Type Codes"
-Description: "Pairing Type Codes for identifying type of pairing entity"
-* include codes from system PMIPairingTypeCodeSystem
 

@@ -60,6 +60,8 @@ jobs:
       - name: Generate output
         run: |
           ./_genonce.sh
+      - name: Confirm generate QA
+        run: yarn run check:generate
       - name: "Github Pages Deployment"
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
