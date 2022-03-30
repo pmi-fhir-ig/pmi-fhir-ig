@@ -3,7 +3,9 @@ Parent: Patient
 Id: pmi-patient
 Title: "PMI Patient"
 Description: "Participant profile"
-* extension 0..0
+* extension 0..1
+* extension contains
+    PMITimezone named timezone 0..1 MS
 * identifier 0..1 MS
   * ^short = "Identifiers for the patient"
   * ^slicing.discriminator.type = #value
@@ -103,3 +105,15 @@ Description: "Participant patient record with phone and email records"
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#SS
   * system = "http://hl7.org/fhir/sid/us-ssn"
   * value = "578448930"
+
+Instance: PMIPatientWithTimezone
+InstanceOf: PMIPatient
+Usage: #example
+Title: "PMI Patient With TimeZone"
+Description: "Participant patient record with timezone"
+* meta.profile[0] = "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
+* extension[0] = PMITimezoneExample
+* name
+  * given[0] = "James"
+  * given[+] = "Emily"
+  * family = "Bond"
