@@ -77,14 +77,14 @@ Instance: PMIPairingEntityCodeExample
 InstanceOf: PMIPairingEntityCode
 Usage: #inline
 Title: "PMI Pairing Entity Code Example"
-Description: "Example extenion for entity code"
+Description: "Example extension for entity code"
 * valueString = "ARI" 
 
 Instance: PMIPairingEntityNameExample
 InstanceOf: PMIPairingEntityName
 Usage: #inline
 Title: "PMI Pairing Entity Name Example"
-Description: "Example extenion for entity name"
+Description: "Example extension for entity name"
 * valueString = "Arizona" 
 
 Instance: PMIPairingAwardeeEntityExample
