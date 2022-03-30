@@ -3,6 +3,7 @@ Parent: Patient
 Id: pmi-patient
 Title: "PMI Patient"
 Description: "Participant profile"
+* extension 0..0
 * identifier 0..1 MS
   * ^short = "Identifiers for the patient"
   * ^slicing.discriminator.type = #value
@@ -21,6 +22,7 @@ Description: "Participant profile"
 * active 0..0
 * name 0..1 MS
 * name
+  * extension 0..0
   * use = #official
   * family MS
   * family ^short = "Last name of the participant"
