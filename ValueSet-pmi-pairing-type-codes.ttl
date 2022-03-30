@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "PMIPairingTypeCodes"];
   fhir:ValueSet.title [ fhir:value "PMI Pairing Type Codes"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-03-30T20:37:56+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-03-30T20:40:12+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Vibrent Health"];
   fhir:ValueSet.contact [
      fhir:index 0;

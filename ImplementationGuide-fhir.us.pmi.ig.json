@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "PMICoreIG",
   "status": "draft",
-  "date": "2022-03-30T20:37:56+00:00",
+  "date": "2022-03-30T20:40:12+00:00",
   "publisher": "Vibrent Health",
   "contact": [
     {
@@ -469,6 +469,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/pmi-timezone"
+        },
+        "name": "PMI Timezone",
+        "description": "Timezone associated with the participant",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/pmi-verified"
         },
         "name": "PMI Verified",
@@ -571,6 +585,20 @@
         },
         "name": "PMI Patient With SSN",
         "description": "Participant patient record with phone and email records",
+        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/PMIPatientWithTimezone"
+        },
+        "name": "PMI Patient With TimeZone",
+        "description": "Participant patient record with timezone",
         "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
       },
       {

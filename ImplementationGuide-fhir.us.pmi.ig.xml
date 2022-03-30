@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="PMICoreIG"/>
   <status value="draft"/>
-  <date value="2022-03-30T20:37:56+00:00"/>
+  <date value="2022-03-30T20:40:12+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -312,6 +312,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/pmi-timezone"/>
+      </reference>
+      <name value="PMI Timezone"/>
+      <description value="Timezone associated with the participant"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/pmi-verified"/>
       </reference>
       <name value="PMI Verified"/>
@@ -393,6 +404,17 @@
       </reference>
       <name value="PMI Patient With SSN"/>
       <description value="Participant patient record with phone and email records"/>
+      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PMIPatientWithTimezone"/>
+      </reference>
+      <name value="PMI Patient With TimeZone"/>
+      <description value="Participant patient record with timezone"/>
       <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
     </resource>
     <resource>

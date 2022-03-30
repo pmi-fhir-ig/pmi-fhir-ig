@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "PMICoreIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-30T20:37:56+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-30T20:40:12+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Vibrent Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -447,6 +447,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-timezone>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-timezone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Timezone" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Timezone associated with the participant" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-verified>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-verified" ]
        ];
@@ -454,7 +468,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Flag to indicate verified information" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -468,7 +482,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pairing Type Codes for identifying type of pairing entity" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -482,7 +496,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pairing Type CodeSystem for identifying type of pairing entity" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -496,7 +510,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PMI Research Program" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -513,7 +527,7 @@
          fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -530,7 +544,7 @@
          fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -547,7 +561,7 @@
          fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -564,7 +578,24 @@
          fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-ops.org/fhir/Patient/PMIPatientWithTimezone>;
+         fhir:Reference.reference [ fhir:value "Patient/PMIPatientWithTimezone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Patient With TimeZone" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Participant patient record with timezone" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient";
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
+       ]
+     ], [
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -578,7 +609,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Participants primary consent" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

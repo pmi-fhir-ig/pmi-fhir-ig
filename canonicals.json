@@ -63,6 +63,13 @@
     "name": "PMIResearchSubject"
   },
   {
+    "id": "pmi-timezone",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-timezone",
+    "version": "0.1.0",
+    "name": "PMITimezone"
+  },
+  {
     "id": "pmi-verified",
     "type": "StructureDefinition",
     "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",

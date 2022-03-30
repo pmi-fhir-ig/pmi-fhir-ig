@@ -81,6 +81,13 @@
       ]
     },
     {
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-timezone",
+      "title": "PMI Timezone",
+      "types": [
+        "code"
+      ]
+    },
+    {
       "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
       "title": "PMI Verified",
       "types": [
@@ -162,6 +169,9 @@
     ],
     "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type": [
       "Extension"
+    ],
+    "https://pmi-ops.org/fhir/StructureDefinition/pmi-timezone": [
+      "Patient"
     ],
     "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified": [
       "Patient.address",
