@@ -3,6 +3,9 @@ Parent: Patient
 Id: pmi-patient
 Title: "PMI Patient"
 Description: "Participant profile"
+* extension 0..1
+* extension contains
+    PMITimezone named timezone 0..1 MS
 * identifier 0..1 MS
   * ^short = "Identifiers for the patient"
   * ^slicing.discriminator.type = #value
