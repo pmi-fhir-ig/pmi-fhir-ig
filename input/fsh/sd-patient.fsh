@@ -5,7 +5,9 @@ Title: "PMI Patient"
 Description: "Participant profile"
 * extension 0..1
 * extension contains
-    PMITimezone named timezone 0..1 MS
+    PMITimezone named timezone 0..1 MS and
+    USCoreEthnicityExtension named ethnicity 0..1 MS and
+    USCoreRaceExtension named race 0..1 MS
 * identifier 0..1 MS
   * ^short = "Identifiers for the patient"
   * ^slicing.discriminator.type = #value
