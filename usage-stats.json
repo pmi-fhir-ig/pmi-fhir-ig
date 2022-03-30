@@ -4,7 +4,7 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities",
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities",
       "title": "PMI Pairing Entities",
       "types": [
         "base64Binary",
@@ -60,21 +60,21 @@
       ]
     },
     {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code",
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code",
       "title": "PMI Pairing Entity Code",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name",
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name",
       "title": "PMI Pairing Entity Name",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type",
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type",
       "title": "PMI Research Pairing Organization Type",
       "types": [
         "code"
@@ -90,7 +90,7 @@
     ],
     "ResearchSubject": [
       {
-        "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject",
+        "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject",
         "title": "PMI Research Subject"
       }
     ]
@@ -132,16 +132,16 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities": [
+    "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities": [
       "ResearchSubject"
     ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code": [
+    "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code": [
       "Extension"
     ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name": [
+    "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name": [
       "Extension"
     ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type": [
+    "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type": [
       "Extension"
     ]
   }

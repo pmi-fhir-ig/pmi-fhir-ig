@@ -1,8 +1,8 @@
 [
   {
-    "id": "pmipairing-type-code-system",
+    "id": "pmi-pairing-type-code-system",
     "type": "CodeSystem",
-    "url": "https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system",
+    "url": "https://pmi-ops.org/fhir/CodeSystem/pmi-pairing-type-code-system",
     "version": "0.1.0",
     "name": "PMIPairingTypeCodeSystem"
   },
@@ -14,6 +14,34 @@
     "name": "PMICoreIG"
   },
   {
+    "id": "pmi-pairing-entities",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities",
+    "version": "0.1.0",
+    "name": "PMIPairingEntities"
+  },
+  {
+    "id": "pmi-pairing-entity-code",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code",
+    "version": "0.1.0",
+    "name": "PMIPairingEntityCode"
+  },
+  {
+    "id": "pmi-pairing-entity-name",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name",
+    "version": "0.1.0",
+    "name": "PMIPairingEntityName"
+  },
+  {
+    "id": "pmi-pairing-entity-type",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type",
+    "version": "0.1.0",
+    "name": "PMIPairingEntityType"
+  },
+  {
     "id": "pmi-patient",
     "type": "StructureDefinition",
     "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient",
@@ -21,44 +49,16 @@
     "name": "PMIPatient"
   },
   {
-    "id": "pmipairing-entities",
+    "id": "pmi-research-subject",
     "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities",
-    "version": "0.1.0",
-    "name": "PMIPairingEntities"
-  },
-  {
-    "id": "pmipairing-entity-code",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code",
-    "version": "0.1.0",
-    "name": "PMIPairingEntityCode"
-  },
-  {
-    "id": "pmipairing-entity-name",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name",
-    "version": "0.1.0",
-    "name": "PMIPairingEntityName"
-  },
-  {
-    "id": "pmipairing-entity-type",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type",
-    "version": "0.1.0",
-    "name": "PMIPairingEntityType"
-  },
-  {
-    "id": "pmiresearch-subject",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject",
     "version": "0.1.0",
     "name": "PMIResearchSubject"
   },
   {
-    "id": "pmipairing-type-codes",
+    "id": "pmi-pairing-type-codes",
     "type": "ValueSet",
-    "url": "https://pmi-ops.org/fhir/ValueSet/pmipairing-type-codes",
+    "url": "https://pmi-ops.org/fhir/ValueSet/pmi-pairing-type-codes",
     "version": "0.1.0",
     "name": "PMIPairingTypeCodes"
   }

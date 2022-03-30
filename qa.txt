@@ -3,9 +3,9 @@
 
 err = 0, warn = 0, info = 0
 IG Publisher Version: 1.1.113
-Generated Wed Mar 30 16:10:35 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.0 (canonical = https://pmi-ops.org/fhir)
+Generated Wed Mar 30 16:51:00 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.0 (canonical = https://pmi-ops.org/fhir)
  Build Errors : 0 / 0 / 0
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/CodeSystem-pmipairing-type-code-system : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/CodeSystem-pmi-pairing-type-code-system : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Consent-PMIPrimaryConsent : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ImplementationGuide-fhir.us.pmi.ig : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Patient-PMIPatientWithName : 0 / 0 / 1
@@ -13,16 +13,16 @@ Generated Wed Mar 30 16:10:35 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Patient-PMIPatientWithSSN : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ResearchStudy-PMI : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ResearchSubject-ResearchSubjectActive : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-pairing-entities : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-pairing-entity-code : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-pairing-entity-name : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-pairing-entity-type : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-patient : 0 / 0 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entities : 0 / 0 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entity-code : 0 / 0 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entity-name : 0 / 0 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entity-type : 0 / 0 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmiresearch-subject : 0 / 0 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ValueSet-pmipairing-type-codes : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-research-subject : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ValueSet-pmi-pairing-type-codes : 0 / 0 / 1
 </table>
 == n/a ==
-== fsh-generated/resources/CodeSystem-pmipairing-type-code-system.json ==
+== fsh-generated/resources/CodeSystem-pmi-pairing-type-code-system.json ==
 == fsh-generated/resources/Consent-PMIPrimaryConsent.json ==
 == fsh-generated/resources/ImplementationGuide-fhir.us.pmi.ig.json ==
 == fsh-generated/resources/Patient-PMIPatientWithName.json ==
@@ -30,10 +30,10 @@ Generated Wed Mar 30 16:10:35 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.
 == fsh-generated/resources/Patient-PMIPatientWithSSN.json ==
 == fsh-generated/resources/ResearchStudy-PMI.json ==
 == fsh-generated/resources/ResearchSubject-ResearchSubjectActive.json ==
+== fsh-generated/resources/StructureDefinition-pmi-pairing-entities.json ==
+== fsh-generated/resources/StructureDefinition-pmi-pairing-entity-code.json ==
+== fsh-generated/resources/StructureDefinition-pmi-pairing-entity-name.json ==
+== fsh-generated/resources/StructureDefinition-pmi-pairing-entity-type.json ==
 == fsh-generated/resources/StructureDefinition-pmi-patient.json ==
-== fsh-generated/resources/StructureDefinition-pmipairing-entities.json ==
-== fsh-generated/resources/StructureDefinition-pmipairing-entity-code.json ==
-== fsh-generated/resources/StructureDefinition-pmipairing-entity-name.json ==
-== fsh-generated/resources/StructureDefinition-pmipairing-entity-type.json ==
-== fsh-generated/resources/StructureDefinition-pmiresearch-subject.json ==
-== fsh-generated/resources/ValueSet-pmipairing-type-codes.json ==
+== fsh-generated/resources/StructureDefinition-pmi-research-subject.json ==
+== fsh-generated/resources/ValueSet-pmi-pairing-type-codes.json ==

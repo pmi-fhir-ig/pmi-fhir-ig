@@ -10,63 +10,63 @@
   fhir:Resource.id [ fhir:value "ResearchSubjectActive"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject";
+       fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject";
        fhir:index 0;
-       fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject>
+       fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ResearchSubjectActive\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pmiresearch-subject.html\">PMI Research Subject</a></p></div><blockquote><p><b>PMI Pairing Entities</b></p><p><b>value</b>: awardee</p><p><b>value</b>: ARI</p><p><b>value</b>: Arizona</p></blockquote><blockquote><p><b>PMI Pairing Entities</b></p><p><b>value</b>: organization</p><p><b>value</b>: ARI</p><p><b>value</b>: Arizona</p></blockquote><blockquote><p><b>PMI Pairing Entities</b></p><p><b>value</b>: site</p><p><b>value</b>: ARI</p><p><b>value</b>: Arizona</p></blockquote><p><b>identifier</b>: Organization identifier: 289392892 (OFFICIAL), Organization identifier: P201004920 (OFFICIAL)</p><p><b>status</b>: on-study</p><p><b>period</b>: 2022-01-13 12:00:29+0000 --&gt; (ongoing)</p><p><b>study</b>: <a href=\"ResearchStudy-PMI.html\">ResearchStudy/PMI</a></p><p><b>individual</b>: <a href=\"Patient-PMIPatientWithName.html\">Patient/PMIPatientWithName</a> \" BOND\"</p><p><b>consent</b>: <a href=\"Consent-PMIPrimaryConsent.html\">Consent/PMIPrimaryConsent</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ResearchSubjectActive\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pmi-research-subject.html\">PMI Research Subject</a></p></div><blockquote><p><b>PMI Pairing Entities</b></p><p><b>value</b>: awardee</p><p><b>value</b>: ARI</p><p><b>value</b>: Arizona</p></blockquote><blockquote><p><b>PMI Pairing Entities</b></p><p><b>value</b>: organization</p><p><b>value</b>: ARI</p><p><b>value</b>: Arizona</p></blockquote><blockquote><p><b>PMI Pairing Entities</b></p><p><b>value</b>: site</p><p><b>value</b>: ARI</p><p><b>value</b>: Arizona</p></blockquote><p><b>identifier</b>: Organization identifier: 289392892 (OFFICIAL), Organization identifier: P201004920 (OFFICIAL)</p><p><b>status</b>: on-study</p><p><b>period</b>: 2022-01-13 12:00:29+0000 --&gt; (ongoing)</p><p><b>study</b>: <a href=\"ResearchStudy-PMI.html\">ResearchStudy/PMI</a></p><p><b>individual</b>: <a href=\"Patient-PMIPatientWithName.html\">Patient/PMIPatientWithName</a> \" BOND\"</p><p><b>consent</b>: <a href=\"Consent-PMIPrimaryConsent.html\">Consent/PMIPrimaryConsent</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type" ];
+       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type" ];
        fhir:Extension.valueCode [ fhir:value "awardee" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code" ];
+       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code" ];
        fhir:Extension.valueString [ fhir:value "ARI" ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name" ];
+       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name" ];
        fhir:Extension.valueString [ fhir:value "Arizona" ]
      ];
-     fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities" ]
+     fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities" ]
   ], [
      fhir:index 1;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type" ];
+       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type" ];
        fhir:Extension.valueCode [ fhir:value "organization" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code" ];
+       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code" ];
        fhir:Extension.valueString [ fhir:value "ARI" ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name" ];
+       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name" ];
        fhir:Extension.valueString [ fhir:value "Arizona" ]
      ];
-     fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities" ]
+     fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities" ]
   ], [
      fhir:index 2;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type" ];
+       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type" ];
        fhir:Extension.valueCode [ fhir:value "site" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code" ];
+       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code" ];
        fhir:Extension.valueString [ fhir:value "ARI" ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name" ];
+       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name" ];
        fhir:Extension.valueString [ fhir:value "Arizona" ]
      ];
-     fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities" ]
+     fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities" ]
   ];
   fhir:ResearchSubject.identifier [
      fhir:index 0;

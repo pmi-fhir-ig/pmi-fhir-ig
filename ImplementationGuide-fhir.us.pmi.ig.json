@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "PMICoreIG",
   "status": "draft",
-  "date": "2022-03-30T16:10:16+00:00",
+  "date": "2022-03-30T16:50:37+00:00",
   "publisher": "Vibrent Health",
   "contact": [
     {
@@ -385,7 +385,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pmiresearch-subject"
+          "reference": "StructureDefinition/pmi-research-subject"
         },
         "name": "PMI Research Subject",
         "description": "Research Subject for PMI Program",
@@ -399,7 +399,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pmipairing-entities"
+          "reference": "StructureDefinition/pmi-pairing-entities"
         },
         "name": "PMI Pairing Entities",
         "description": "Entities that Participant is paired with",
@@ -413,7 +413,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pmipairing-entity-code"
+          "reference": "StructureDefinition/pmi-pairing-entity-code"
         },
         "name": "PMI Pairing Entity Code",
         "description": "Code for the entity that Participant is paired with",
@@ -427,7 +427,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pmipairing-entity-name"
+          "reference": "StructureDefinition/pmi-pairing-entity-name"
         },
         "name": "PMI Pairing Entity Name",
         "description": "Name of the entity that Participant is paired with",
@@ -441,7 +441,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pmipairing-entity-type"
+          "reference": "StructureDefinition/pmi-pairing-entity-type"
         },
         "name": "PMI Research Pairing Organization Type",
         "description": "Type of entity that Participant is paired with",
@@ -455,7 +455,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/pmipairing-type-codes"
+          "reference": "ValueSet/pmi-pairing-type-codes"
         },
         "name": "PMI Pairing Type Codes",
         "description": "Pairing Type Codes for identifying type of pairing entity",
@@ -469,7 +469,7 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/pmipairing-type-code-system"
+          "reference": "CodeSystem/pmi-pairing-type-code-system"
         },
         "name": "PMI Pairing Type CodeSystem",
         "description": "Pairing Type CodeSystem for identifying type of pairing entity",
@@ -557,7 +557,7 @@
         },
         "name": "Research Subject Active",
         "description": "Participant who has completed primary consent and is active",
-        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject"
+        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject"
       }
     ],
     "page": {

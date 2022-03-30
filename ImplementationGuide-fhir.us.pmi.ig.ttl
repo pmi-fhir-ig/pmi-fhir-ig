@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "PMICoreIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-30T16:10:16+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-30T16:50:37+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Vibrent Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -363,8 +363,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pmiresearch-subject" ]
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-research-subject" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Research Subject" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Research Subject for PMI Program" ];
@@ -377,8 +377,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pmipairing-entities" ]
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-pairing-entities" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Pairing Entities" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Entities that Participant is paired with" ];
@@ -391,8 +391,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pmipairing-entity-code" ]
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-pairing-entity-code" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Pairing Entity Code" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code for the entity that Participant is paired with" ];
@@ -405,8 +405,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pmipairing-entity-name" ]
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-pairing-entity-name" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Pairing Entity Name" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Name of the entity that Participant is paired with" ];
@@ -419,8 +419,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pmipairing-entity-type" ]
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-pairing-entity-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Research Pairing Organization Type" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type of entity that Participant is paired with" ];
@@ -433,8 +433,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/ValueSet/pmipairing-type-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/pmipairing-type-codes" ]
+         fhir:link <https://pmi-ops.org/fhir/ValueSet/pmi-pairing-type-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pmi-pairing-type-codes" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Pairing Type Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pairing Type Codes for identifying type of pairing entity" ];
@@ -447,8 +447,8 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/CodeSystem/pmipairing-type-code-system>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/pmipairing-type-code-system" ]
+         fhir:link <https://pmi-ops.org/fhir/CodeSystem/pmi-pairing-type-code-system>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/pmi-pairing-type-code-system" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Pairing Type CodeSystem" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pairing Type CodeSystem for identifying type of pairing entity" ];
@@ -546,8 +546,8 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Subject Active" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Participant who has completed primary consent and is active" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject";
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject>
+         fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject";
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject>
        ]
      ];
      fhir:ImplementationGuide.definition.page [
