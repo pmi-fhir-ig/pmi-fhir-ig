@@ -15,9 +15,19 @@ Usage: #example
 Title: "PMI Patient With Phone And Email"
 Description: "Participant patient record with phone and email records"
 * meta.profile[0] = "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
-* telecom
+* telecom[0]
   * system = http://hl7.org/fhir/contact-point-system#phone
   * value = "2405553920"
+  * use = http://hl7.org/fhir/contact-point-use#home
+* telecom[+]
+  * extension = PMIVerifiedExample
+  * system = http://hl7.org/fhir/contact-point-system#phone
+  * value = "2405553920"
+  * use = http://hl7.org/fhir/contact-point-use#home
+* telecom[+]
+  * extension = PMIVerifiedExample
+  * system = http://hl7.org/fhir/contact-point-system#email
+  * value = "patient@example.org"
   * use = http://hl7.org/fhir/contact-point-use#home
 
 Instance: PMIPatientWithSSN

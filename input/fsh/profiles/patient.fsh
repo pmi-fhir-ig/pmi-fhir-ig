@@ -28,7 +28,9 @@ Description: "Participant profile"
   * given ^short = "First and Middle name (if any) provided as array of strings"
 * telecom MS
   * period 0..0
-  * extension 0..0
+  * extension 0..1
+  * extension contains
+    PMIVerified named verifiedPhoneNumber 0..1 MS
 * gender MS
 * birthDate MS
 * deceased[x] MS
@@ -42,6 +44,9 @@ Description: "Participant profile"
   * state MS
   * postalCode MS
   * country MS
+  * extension 0..1
+  * extension contains
+    PMIVerified named verifiedAddress 0..1 MS
 * multipleBirth[x] 0..0
 * maritalStatus 0..0 
 * photo 0..0
