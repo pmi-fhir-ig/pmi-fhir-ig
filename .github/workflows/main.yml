@@ -36,6 +36,13 @@ jobs:
         with:
           ruby-version: 2.6
           bundler-cache: true
+      - name: Cache multiple paths
+        uses: actions/cache@v3
+        with:
+          path: |
+            /opt/hostedtoolcache/Ruby/2.6.9
+            input-cache
+          key: ${{ runner.os }}-1
       - name: install gh-pages
         run: yarn global add gh-pages fsh-sushi
 
