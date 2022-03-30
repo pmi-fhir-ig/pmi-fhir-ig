@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "PMICoreIG",
   "status": "draft",
-  "date": "2022-03-30T19:59:56+00:00",
+  "date": "2022-03-30T20:37:56+00:00",
   "publisher": "Vibrent Health",
   "contact": [
     {
@@ -385,6 +385,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/pmi-physical-measurement-height"
+        },
+        "name": "PMI Physical Measurement Height",
+        "description": "Physican Measurement records for the participant",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/pmi-research-subject"
         },
         "name": "PMI Research Subject",
@@ -499,9 +513,23 @@
         "reference": {
           "reference": "ResearchStudy/PMI"
         },
-        "name": "Research Subject Active",
-        "description": "Participant who has completed primary consent and is active",
+        "name": "Research Study",
+        "description": "PMI Research Program",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/PMIHeightExample"
+        },
+        "name": "PMI Height Example",
+        "description": "Example of Height Physical Measurement for the participant",
+        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height"
       },
       {
         "extension": [

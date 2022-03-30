@@ -49,6 +49,13 @@
     "name": "PMIPatient"
   },
   {
+    "id": "pmi-physical-measurement-height",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height",
+    "version": "0.1.0",
+    "name": "PMIPhysicalMeasurementHeight"
+  },
+  {
     "id": "pmi-research-subject",
     "type": "StructureDefinition",
     "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject",

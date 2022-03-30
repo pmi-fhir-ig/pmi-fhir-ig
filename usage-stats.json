@@ -95,6 +95,12 @@
         "title": "PMI Patient"
       }
     ],
+    "Observation": [
+      {
+        "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height",
+        "title": "PMI Physical Measurement Height"
+      }
+    ],
     "ResearchSubject": [
       {
         "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject",
@@ -118,8 +124,14 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"

@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "PMICoreIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-30T19:59:56+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-30T20:37:56+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Vibrent Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -363,6 +363,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-physical-measurement-height" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Physical Measurement Height" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Physican Measurement records for the participant" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-research-subject" ]
        ];
@@ -370,7 +384,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Research Subject for PMI Program" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -384,7 +398,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Entities that Participant is paired with" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -398,7 +412,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code for the entity that Participant is paired with" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -412,7 +426,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Name of the entity that Participant is paired with" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -426,7 +440,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type of entity that Participant is paired with" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -440,7 +454,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Flag to indicate verified information" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -454,7 +468,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pairing Type Codes for identifying type of pairing entity" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -468,7 +482,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pairing Type CodeSystem for identifying type of pairing entity" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -478,11 +492,28 @@
          fhir:link <https://pmi-ops.org/fhir/ResearchStudy/PMI>;
          fhir:Reference.reference [ fhir:value "ResearchStudy/PMI" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Subject Active" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Participant who has completed primary consent and is active" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Study" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PMI Research Program" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-ops.org/fhir/Observation/PMIHeightExample>;
+         fhir:Reference.reference [ fhir:value "Observation/PMIHeightExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Height Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Height Physical Measurement for the participant" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height";
+         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height>
+       ]
+     ], [
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -499,7 +530,7 @@
          fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -516,7 +547,7 @@
          fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -533,7 +564,7 @@
          fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -547,7 +578,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Participants primary consent" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://pmi-ops.org/fhir/Observation/PMIHeightExample> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PMIHeightExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height";
+       fhir:index 0;
+       fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PMIHeightExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pmi-physical-measurement-height.html\">PMI Physical Measurement Height</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"Patient-PMIPatientWithName.html\">Patient/PMIPatientWithName</a> \" BOND\"</p><p><b>effective</b>: 2022-01-13 12:00:29+0000</p><p><b>value</b>: 71 in<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [in_i] = '[in_i]')</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:8302-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "8302-2" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://pmi-ops.org/fhir/Patient/PMIPatientWithName>;
+     fhir:Reference.reference [ fhir:value "Patient/PMIPatientWithName" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-01-13T12:00:29+00:00"^^xsd:dateTime];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "71"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "in" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "[in_i]" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://pmi-ops.org/fhir/Observation/PMIHeightExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

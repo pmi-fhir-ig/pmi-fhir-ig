@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="PMICoreIG"/>
   <status value="draft"/>
-  <date value="2022-03-30T19:59:56+00:00"/>
+  <date value="2022-03-30T20:37:56+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -246,6 +246,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/pmi-physical-measurement-height"/>
+      </reference>
+      <name value="PMI Physical Measurement Height"/>
+      <description value="Physican Measurement records for the participant"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/pmi-research-subject"/>
       </reference>
       <name value="PMI Research Subject"/>
@@ -336,9 +347,20 @@
       <reference>
         <reference value="ResearchStudy/PMI"/>
       </reference>
-      <name value="Research Subject Active"/>
-      <description value="Participant who has completed primary consent and is active"/>
+      <name value="Research Study"/>
+      <description value="PMI Research Program"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PMIHeightExample"/>
+      </reference>
+      <name value="PMI Height Example"/>
+      <description value="Example of Height Physical Measurement for the participant"/>
+      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
