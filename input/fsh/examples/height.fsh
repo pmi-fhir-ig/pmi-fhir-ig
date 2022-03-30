@@ -10,5 +10,5 @@ Description: "Example of Height Physical Measurement for the participant"
 * valueQuantity
   * value = 71
   * unit = "in"
-  * code = #in_i
+  * code = #[in_i]
   * system = "http://unitsofmeasure.org"
