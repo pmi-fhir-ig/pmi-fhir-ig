@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="PMICoreIG"/>
   <status value="draft"/>
-  <date value="2022-03-29T03:43:36+00:00"/>
+  <date value="2022-03-30T01:18:45+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -73,6 +73,14 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="default-version"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -309,6 +317,72 @@
       <name value="PMI Pairing Type CodeSystem"/>
       <description value="Pairing Type CodeSystem for identifying type of pairing entity"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/PMI"/>
+      </reference>
+      <name value="Research Subject Active"/>
+      <description value="Participant who has completed primary consent and is active"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PMIPatientWithName"/>
+      </reference>
+      <name value="PMI Patient With Name"/>
+      <description value="Participant patient record with name"/>
+      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PMIPatientWithPhoneAndEmail"/>
+      </reference>
+      <name value="PMI Patient With Phone And Email"/>
+      <description value="Participant patient record with phone and email records"/>
+      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PMIPatientWithSSN"/>
+      </reference>
+      <name value="PMI Patient With SSN"/>
+      <description value="Participant patient record with phone and email records"/>
+      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/PMIPrimaryConsent"/>
+      </reference>
+      <name value="PMI Primary Consent"/>
+      <description value="Participants primary consent"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/ResearchSubjectActive"/>
+      </reference>
+      <name value="Research Subject Active"/>
+      <description value="Participant who has completed primary consent and is active"/>
+      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

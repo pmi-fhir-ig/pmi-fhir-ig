@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3c4b476c-41ca-49ab-978e-f441a6f9d7aa"/>
+  <id value="ea221f24-d1c9-42aa-8950-a563494565c9"/>
   <meta>
-    <lastUpdated value="2022-03-29T03:43:36.371+00:00"/>
+    <lastUpdated value="2022-03-30T01:18:45.371+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -31,6 +31,9 @@
                 <td>
                   <b>Display</b>
                 </td>
+                <td>
+                  <b>Definition</b>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -38,6 +41,7 @@
                   <a href="CodeSystem-pmipairing-type-code-system.html#pmipairing-type-code-system-awardee">awardee</a>
                 </td>
                 <td>Awardee</td>
+                <td>Awardee Entity for participants</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -45,6 +49,7 @@
                   <a href="CodeSystem-pmipairing-type-code-system.html#pmipairing-type-code-system-organization">organization</a>
                 </td>
                 <td>Organization</td>
+                <td>Organization Entity for participants</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -52,6 +57,7 @@
                   <a href="CodeSystem-pmipairing-type-code-system.html#pmipairing-type-code-system-site">site</a>
                 </td>
                 <td>Site</td>
+                <td>Site Entity for participants</td>
               </tr>
             </table>
           </div>
@@ -61,7 +67,7 @@
         <name value="PMIPairingTypeCodes"/>
         <title value="PMI Pairing Type Codes"/>
         <status value="active"/>
-        <date value="2022-03-29T03:43:36+00:00"/>
+        <date value="2022-03-30T01:18:45+00:00"/>
         <publisher value="Vibrent Health"/>
         <contact>
           <name value="Vibrent Health"/>
@@ -88,8 +94,8 @@
         </contact>
         <description value="Pairing Type Codes for identifying type of pairing entity"/>
         <expansion>
-          <identifier value="urn:uuid:9cffa9b0-4703-45fe-8e7e-519d47bbd0bd"/>
-          <timestamp value="2022-03-29T03:43:47+00:00"/>
+          <identifier value="urn:uuid:67fe98ea-f008-4728-97c7-57f6a8bb5923"/>
+          <timestamp value="2022-03-30T01:19:01+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

@@ -46,6 +46,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""SS""/>
   </coding>
 </valueCodeableConcept>","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://hl7.org/fhir/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -108,11 +109,10 @@ middle name","",0,*,"Y","","Y","string {[]} {[]}
 ","telecom",".telecom","PID-13, PID-14, PID-40"
 "Patient.telecom.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.telecom.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+"Patient.telecom.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.telecom.system","","","",0,1,"","","Y","code {[]} {[]}
 ","phone | fax | email | pager | url | sms | other","Telecommunications form for contact point - what communications system is required to make use of the contact.","","","","","","","","","",,"required","Telecommunications form for contact point.","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -215,6 +215,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.contact.relationship","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","The kind of relationship","The nature of the relationship between the patient and the contact person.","","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/v2-0131""/>
     <code value=""CP""/>
   </coding>
 </valueCodeableConcept>","","","",,"extensible","The nature of the relationship between a patient and a contact person for that patient.","http://hl7.org/fhir/ValueSet/patient-contactrelationship","",,,,"Patient.contact.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

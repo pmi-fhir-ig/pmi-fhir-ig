@@ -1,0 +1,107 @@
+{
+  "resourceType": "ResearchSubject",
+  "id": "ResearchSubjectActive",
+  "meta": {
+    "profile": [
+      "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ResearchSubjectActive\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pmiresearch-subject.html\">PMI Research Subject</a></p></div><blockquote><p><b>PMI Pairing Entities</b></p><p><b>value</b>: awardee</p><p><b>value</b>: ARI</p><p><b>value</b>: Arizona</p></blockquote><blockquote><p><b>PMI Pairing Entities</b></p><p><b>value</b>: organization</p><p><b>value</b>: ARI</p><p><b>value</b>: Arizona</p></blockquote><blockquote><p><b>PMI Pairing Entities</b></p><p><b>value</b>: site</p><p><b>value</b>: ARI</p><p><b>value</b>: Arizona</p></blockquote><p><b>identifier</b>: Organization identifier: 289392892 (OFFICIAL), Organization identifier: P201004920 (OFFICIAL)</p><p><b>status</b>: on-study</p><p><b>period</b>: 2022-01-13 12:00:29+0000 --&gt; (ongoing)</p><p><b>study</b>: <a href=\"ResearchStudy-PMI.html\">ResearchStudy/PMI</a></p><p><b>individual</b>: <a href=\"Patient-PMIPatientWithName.html\">Patient/PMIPatientWithName</a> \" BOND\"</p><p><b>consent</b>: <a href=\"Consent-PMIPrimaryConsent.html\">Consent/PMIPrimaryConsent</a></p></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type",
+          "valueCode": "awardee"
+        },
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code",
+          "valueString": "ARI"
+        },
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name",
+          "valueString": "Arizona"
+        }
+      ],
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type",
+          "valueCode": "organization"
+        },
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code",
+          "valueString": "ARI"
+        },
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name",
+          "valueString": "Arizona"
+        }
+      ],
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type",
+          "valueCode": "site"
+        },
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code",
+          "valueString": "ARI"
+        },
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name",
+          "valueString": "Arizona"
+        }
+      ],
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "XX"
+          }
+        ]
+      },
+      "system": "https://pmi-ops.org/fhir/systems/ptsc-id",
+      "value": "289392892"
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "XX"
+          }
+        ]
+      },
+      "system": "https://pmi-ops.org/fhir/systems/participant-id",
+      "value": "P201004920"
+    }
+  ],
+  "status": "on-study",
+  "period": {
+    "start": "2022-01-13T12:00:29+00:00"
+  },
+  "study": {
+    "reference": "ResearchStudy/PMI"
+  },
+  "individual": {
+    "reference": "Patient/PMIPatientWithName"
+  },
+  "consent": {
+    "reference": "Consent/PMIPrimaryConsent"
+  }
+}

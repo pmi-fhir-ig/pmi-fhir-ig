@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PMIPatientWithPhoneAndEmail"/>
+  <meta>
+    <profile value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Anonymous Patient</b> (no stated gender), DoB Unknown</p></div>
+  </text>
+  <telecom>
+    <system value="phone"/>
+    <value value="2405553920"/>
+    <use value="home"/>
+  </telecom>
+</Patient>

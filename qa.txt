@@ -1,40 +1,39 @@
 ﻿PMICoreIG : Validation Results
 =========================================
 
-err = 0, warn = 12, info = 1
+err = 0, warn = 0, info = 0
 IG Publisher Version: 1.1.113
-Generated Tue Mar 29 03:43:56 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.0 (canonical = https://pmi-ops.org/fhir)
+Generated Wed Mar 30 01:19:11 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.0 (canonical = https://pmi-ops.org/fhir)
  Build Errors : 0 / 0 / 0
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/CodeSystem-pmipairing-type-code-system : 0 / 0 / 2
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/CodeSystem-pmipairing-type-code-system : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Consent-PMIPrimaryConsent : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ImplementationGuide-fhir.us.pmi.ig : 0 / 0 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-patient : 0 / 5 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entities : 0 / 1 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entity-code : 0 / 1 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entity-name : 0 / 1 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entity-type : 0 / 1 / 1
- /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmiresearch-subject : 0 / 3 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Patient-PMIPatientWithName : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Patient-PMIPatientWithPhoneAndEmail : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Patient-PMIPatientWithSSN : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ResearchStudy-PMI : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ResearchSubject-ResearchSubjectActive : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-patient : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entities : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entity-code : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entity-name : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmipairing-entity-type : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmiresearch-subject : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ValueSet-pmipairing-type-codes : 0 / 0 / 1
 </table>
 == n/a ==
 == fsh-generated/resources/CodeSystem-pmipairing-type-code-system.json ==
-INFORMATION: CodeSystem/pmipairing-type-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/Consent-PMIPrimaryConsent.json ==
 == fsh-generated/resources/ImplementationGuide-fhir.us.pmi.ig.json ==
+== fsh-generated/resources/Patient-PMIPatientWithName.json ==
+== fsh-generated/resources/Patient-PMIPatientWithPhoneAndEmail.json ==
+== fsh-generated/resources/Patient-PMIPatientWithSSN.json ==
+== fsh-generated/resources/ResearchStudy-PMI.json ==
+== fsh-generated/resources/ResearchSubject-ResearchSubjectActive.json ==
 == fsh-generated/resources/StructureDefinition-pmi-patient.json ==
-WARNING: StructureDefinition/pmi-patient: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/pmi-patient: StructureDefinition.snapshot.element[60].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/pmi-patient: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/pmi-patient: StructureDefinition.differential.element[27].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition.where(url = 'https://pmi-ops.org/fhir/StructureDefinition/pmi-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-pmipairing-entities.json ==
-WARNING: StructureDefinition.where(url = 'https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entities'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pmipairing-entity-code.json ==
-WARNING: StructureDefinition.where(url = 'https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-code'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pmipairing-entity-name.json ==
-WARNING: StructureDefinition.where(url = 'https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-name'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pmipairing-entity-type.json ==
-WARNING: StructureDefinition.where(url = 'https://pmi-ops.org/fhir/StructureDefinition/pmipairing-entity-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pmiresearch-subject.json ==
-WARNING: StructureDefinition/pmiresearch-subject: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/pmiresearch-subject: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition.where(url = 'https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-pmipairing-type-codes.json ==
