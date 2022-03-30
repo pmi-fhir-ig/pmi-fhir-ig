@@ -1,6 +1,6 @@
 Profile: PMIResearchSubject
 Parent: ResearchSubject
-Id: pmiresearch-subject
+Id: pmi-research-subject
 Title: "PMI Research Subject"
 Description: "Research Subject for PMI Program"
 * ^meta.versionId = "1"

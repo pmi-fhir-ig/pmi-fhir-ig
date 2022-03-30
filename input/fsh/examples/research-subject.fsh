@@ -3,7 +3,7 @@ InstanceOf: PMIResearchSubject
 Usage: #example
 Title: "Research Subject Active"
 Description: "Participant who has completed primary consent and is active"
-* meta.profile[0] = "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject"
+* meta.profile[0] = "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject"
 * extension[0] = PMIPairingAwardeeEntityExample
 * extension[+] = PMIPairingOrganizationEntityExample
 * extension[+] = PMIPairingSiteEntityExample
