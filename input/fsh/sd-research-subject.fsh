@@ -56,6 +56,10 @@ InstanceOf: PMIResearchSubject
 Usage: #example
 Title: "Research Subject Active"
 Description: "Participant who has completed primary consent and is active"
+* meta.profile[0] = "https://pmi-ops.org/fhir/StructureDefinition/pmiresearch-subject"
+* extension[0] = PMIPairingAwardeeEntityExample
+* extension[+] = PMIPairingOrganizationEntityExample
+* extension[+] = PMIPairingSiteEntityExample
 * identifier[0].use = #official
 * identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
 * identifier[=].system = "https://pmi-ops.org/fhir/systems/ptsc-id"
@@ -67,7 +71,7 @@ Description: "Participant who has completed primary consent and is active"
 * status = #on-study
 * period
   * start = "2022-01-13T12:00:29+00:00"
-* individual = Reference(PMIPatientExample)
+* individual = Reference(PMIPatientWithName)
 * study = Reference(PMIResearchStudy)
 * consent = Reference(PMIPrimaryConsent)
 
@@ -79,12 +83,6 @@ Description: "Participant who has completed primary consent and is active"
 * id = "PMI"
 * status = #active
 
-Instance: PMIPatientExample
-InstanceOf: PMIPatient
-Usage: #example
-Title: "PMI Patient Example"
-Description: "Participant patient record"
-
 Instance: PMIPrimaryConsent
 InstanceOf: Consent
 Usage: #example
@@ -93,3 +91,60 @@ Description: "Participants primary consent"
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#research
 * category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research
+* policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#cric
+
+Instance: PMIPairingEntityTypeAwardeeExample
+InstanceOf: PMIPairingEntityType
+Usage: #inline
+Title: "PMI Pairing Entity Type Awardee Example"
+* valueCode = PMIPairingTypeCodeSystem#awardee
+
+Instance: PMIPairingEntityTypeOrgExample
+InstanceOf: PMIPairingEntityType
+Usage: #inline
+Title: "PMI Pairing Entity Type Awardee Example"
+* valueCode = PMIPairingTypeCodeSystem#organization
+
+Instance: PMIPairingEntityTypeSiteExample
+InstanceOf: PMIPairingEntityType
+Usage: #inline
+Title: "PMI Pairing Entity Type Site Example"
+* valueCode = PMIPairingTypeCodeSystem#site
+
+Instance: PMIPairingEntityCodeExample
+InstanceOf: PMIPairingEntityCode
+Usage: #inline
+Title: "PMI Pairing Entity Code Example"
+Description: "Example extenion for entity code"
+* valueString = "ARI" 
+
+Instance: PMIPairingEntityNameExample
+InstanceOf: PMIPairingEntityName
+Usage: #inline
+Title: "PMI Pairing Entity Name Example"
+Description: "Example extenion for entity name"
+* valueString = "Arizona" 
+
+Instance: PMIPairingAwardeeEntityExample
+InstanceOf: PMIPairingEntities
+Usage: #inline
+Title: "PMI Pairing Awardee Entity Example"
+* extension[0] = PMIPairingEntityTypeAwardeeExample
+* extension[+] = PMIPairingEntityCodeExample
+* extension[+] = PMIPairingEntityNameExample
+
+Instance: PMIPairingOrganizationEntityExample
+InstanceOf: PMIPairingEntities
+Usage: #inline
+Title: "PMI Pairing Organization Example"
+* extension[0] = PMIPairingEntityTypeOrgExample
+* extension[+] = PMIPairingEntityCodeExample
+* extension[+] = PMIPairingEntityNameExample
+
+Instance: PMIPairingSiteEntityExample
+InstanceOf: PMIPairingEntities
+Usage: #inline
+Title: "PMI Pairing Site Example"
+* extension[0] = PMIPairingEntityTypeSiteExample
+* extension[+] = PMIPairingEntityCodeExample
+* extension[+] = PMIPairingEntityNameExample
