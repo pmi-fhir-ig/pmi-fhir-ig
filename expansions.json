@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3337f46b-2035-493c-bc1d-d43b34db2c87",
+  "id" : "9c2b57dc-2da2-4090-b2d7-91947ce2b28b",
   "meta" : {
-    "lastUpdated" : "2022-03-30T19:57:14.457+00:00"
+    "lastUpdated" : "2022-03-30T19:59:56.918+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "PMIPairingTypeCodes",
       "title" : "PMI Pairing Type Codes",
       "status" : "active",
-      "date" : "2022-03-30T19:57:14+00:00",
+      "date" : "2022-03-30T19:59:56+00:00",
       "publisher" : "Vibrent Health",
       "contact" : [{
         "name" : "Vibrent Health",
@@ -46,8 +46,8 @@
       }],
       "description" : "Pairing Type Codes for identifying type of pairing entity",
       "expansion" : {
-        "identifier" : "urn:uuid:ccaf924c-7747-4ff7-b6fc-8e545510b1f0",
-        "timestamp" : "2022-03-30T19:57:28+00:00",
+        "identifier" : "urn:uuid:f99e0e3d-3687-4022-9b64-98822fcae049",
+        "timestamp" : "2022-03-30T20:00:09+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",

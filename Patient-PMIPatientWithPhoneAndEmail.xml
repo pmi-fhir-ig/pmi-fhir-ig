@@ -13,4 +13,20 @@
     <value value="2405553920"/>
     <use value="home"/>
   </telecom>
+  <telecom>
+    <extension url="https://pmi-ops.org/fhir/StructureDefinition/pmi-verified">
+      <valueBoolean value="true"/>
+    </extension>
+    <system value="phone"/>
+    <value value="2405553920"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <extension url="https://pmi-ops.org/fhir/StructureDefinition/pmi-verified">
+      <valueBoolean value="true"/>
+    </extension>
+    <system value="email"/>
+    <value value="patient@example.org"/>
+    <use value="home"/>
+  </telecom>
 </Patient>

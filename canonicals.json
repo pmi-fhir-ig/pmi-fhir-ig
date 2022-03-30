@@ -56,6 +56,13 @@
     "name": "PMIResearchSubject"
   },
   {
+    "id": "pmi-verified",
+    "type": "StructureDefinition",
+    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
+    "version": "0.1.0",
+    "name": "PMIVerified"
+  },
+  {
     "id": "pmi-pairing-type-codes",
     "type": "ValueSet",
     "url": "https://pmi-ops.org/fhir/ValueSet/pmi-pairing-type-codes",

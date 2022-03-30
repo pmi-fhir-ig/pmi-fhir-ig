@@ -15,6 +15,28 @@
       "system": "phone",
       "value": "2405553920",
       "use": "home"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
+          "valueBoolean": true
+        }
+      ],
+      "system": "phone",
+      "value": "2405553920",
+      "use": "home"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
+          "valueBoolean": true
+        }
+      ],
+      "system": "email",
+      "value": "patient@example.org",
+      "use": "home"
     }
   ]
 }

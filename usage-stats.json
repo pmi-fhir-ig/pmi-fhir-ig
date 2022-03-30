@@ -79,6 +79,13 @@
       "types": [
         "code"
       ]
+    },
+    {
+      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
+      "title": "PMI Verified",
+      "types": [
+        "boolean"
+      ]
     }
   ],
   "profiles": {
@@ -143,6 +150,10 @@
     ],
     "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type": [
       "Extension"
+    ],
+    "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified": [
+      "Patient.address",
+      "Patient.telecom"
     ]
   }
 }

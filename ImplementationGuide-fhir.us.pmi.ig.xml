@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="PMICoreIG"/>
   <status value="draft"/>
-  <date value="2022-03-30T19:57:14+00:00"/>
+  <date value="2022-03-30T19:59:56+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -294,6 +294,17 @@
       </reference>
       <name value="PMI Research Pairing Organization Type"/>
       <description value="Type of entity that Participant is paired with"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pmi-verified"/>
+      </reference>
+      <name value="PMI Verified"/>
+      <description value="Flag to indicate verified information"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

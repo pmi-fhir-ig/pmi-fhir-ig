@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "PMICoreIG",
   "status": "draft",
-  "date": "2022-03-30T19:57:14+00:00",
+  "date": "2022-03-30T19:59:56+00:00",
   "publisher": "Vibrent Health",
   "contact": [
     {
@@ -445,6 +445,20 @@
         },
         "name": "PMI Research Pairing Organization Type",
         "description": "Type of entity that Participant is paired with",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pmi-verified"
+        },
+        "name": "PMI Verified",
+        "description": "Flag to indicate verified information",
         "exampleBoolean": false
       },
       {

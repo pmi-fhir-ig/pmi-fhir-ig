@@ -20,7 +20,7 @@
   fhir:CodeSystem.name [ fhir:value "PMIPairingTypeCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "PMI Pairing Type CodeSystem"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-03-30T19:57:14+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-03-30T19:59:56+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "Vibrent Health"];
   fhir:CodeSystem.contact [
      fhir:index 0;
