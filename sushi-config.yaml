@@ -18,7 +18,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 publisher:
   name: Vibrent Health
   url: https://vibrenthealth.com
-  # email: test@example.org
+  email: anaik@vibrenthealth.com
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
