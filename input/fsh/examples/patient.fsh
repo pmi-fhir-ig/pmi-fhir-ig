@@ -50,14 +50,15 @@ Instance: participant-provenance
 InstanceOf: Provenance
 Usage: #inline
 * recorded = "2015-02-07T13:28:17.239+02:00"
-* target = Reference(PMIPatientWithName)
+* target = Reference(PMIPatientWithSelfUpdates)
 * agent
   * type = http://terminology.hl7.org/CodeSystem/provenance-participant-type#author
-  * who = Reference(PMIPatientWithName)
+  * who = Reference(PMIPatientWithSelfUpdates)
 
 Instance: cati-author
 InstanceOf: Organization
 Usage: #inline
+* name = "PTSC"
 * contact
   * telecom
     * system = http://hl7.org/fhir/contact-point-system#email
@@ -67,7 +68,7 @@ Instance: cati-provenance
 InstanceOf: Provenance
 Usage: #inline
 * recorded = "2015-02-07T13:28:17.239+02:00"
-* target = Reference(PMIPatientWithName)
+* target = Reference(PMIPatientWithCATIUpdates)
 * agent
   * type = http://terminology.hl7.org/CodeSystem/provenance-participant-type#author
   * who = Reference(cati-author)
