@@ -3,9 +3,9 @@ Parent: Patient
 Id: pmi-patient
 Title: "PMI Patient"
 Description: "Participant profile"
-* extension 0..1
-* extension contains
-    PMITimezone named timezone 0..1 MS
+* contained 0..1 MS
+* contained only Provenance
+* id ^short = "Participant ID e.g. P12345678"
 * identifier 0..1 MS
   * ^short = "Identifiers for the patient"
   * ^slicing.discriminator.type = #value
@@ -33,10 +33,10 @@ Description: "Participant profile"
   * period 0..0
   * extension 0..1
   * extension contains
-    PMIVerified named verifiedPhoneNumber 0..1 MS
-* gender MS
+    PMIVerified named verified 0..1 MS
 * birthDate MS
 * deceased[x] MS
+  * ^short = "Indicates whether the participant is deceased or not. If the date is known, use deceasedDateTime, else use deceasedBoolean"
 * address MS
   * use 1..1 MS
   * use = #home
@@ -50,16 +50,20 @@ Description: "Participant profile"
   * extension 0..1
   * extension contains
     PMIVerified named verifiedAddress 0..1 MS
+* communication
+  * ^isModifier = false
 * multipleBirth[x] 0..0
-* maritalStatus 0..0 
+* gender 0..0
+* maritalStatus 0..0
 * photo 0..0
 * contact MS
   * ^short = "Secondary Contacts for the Patient"
+  * ^isModifier = false
   * relationship 0..1 MS
   * relationship = http://terminology.hl7.org/CodeSystem/v2-0131#CP
   * name 1..1 MS
   * gender 0..0
-  * organization 0..0 
+  * organization 0..0
   * period 0..0
 * generalPractitioner 0..0
 * managingOrganization 0..0
