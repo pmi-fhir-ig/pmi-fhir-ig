@@ -1,0 +1,56 @@
+{
+  "resourceType": "Patient",
+  "id": "P128829102",
+  "meta": {
+    "source": "#patient-provenance",
+    "profile": [
+      "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> (no stated gender), DoB Unknown ( Social Security number: 578448930(use: OFFICIAL))</p><hr/></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Provenance",
+      "id": "patient-provenance",
+      "target": [
+        {
+          "reference": "Patient/P128829100"
+        }
+      ],
+      "recorded": "2015-02-07T13:28:17.239+02:00",
+      "agent": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                "code": "author"
+              }
+            ]
+          },
+          "who": {
+            "reference": "Patient/P128829100"
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SS"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-ssn",
+      "value": "578448930"
+    }
+  ]
+}

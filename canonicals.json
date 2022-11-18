@@ -1,45 +1,10 @@
 [
   {
-    "id": "pmi-pairing-type-code-system",
-    "type": "CodeSystem",
-    "url": "https://pmi-ops.org/fhir/CodeSystem/pmi-pairing-type-code-system",
-    "version": "0.1.0",
-    "name": "PMIPairingTypeCodeSystem"
-  },
-  {
     "id": "fhir.us.pmi.ig",
     "type": "ImplementationGuide",
     "url": "https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig",
     "version": "0.1.0",
     "name": "PMICoreIG"
-  },
-  {
-    "id": "pmi-pairing-entities",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities",
-    "version": "0.1.0",
-    "name": "PMIPairingEntities"
-  },
-  {
-    "id": "pmi-pairing-entity-code",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code",
-    "version": "0.1.0",
-    "name": "PMIPairingEntityCode"
-  },
-  {
-    "id": "pmi-pairing-entity-name",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name",
-    "version": "0.1.0",
-    "name": "PMIPairingEntityName"
-  },
-  {
-    "id": "pmi-pairing-entity-type",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type",
-    "version": "0.1.0",
-    "name": "PMIPairingEntityType"
   },
   {
     "id": "pmi-patient",
@@ -49,38 +14,10 @@
     "name": "PMIPatient"
   },
   {
-    "id": "pmi-physical-measurement-height",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height",
-    "version": "0.1.0",
-    "name": "PMIPhysicalMeasurementHeight"
-  },
-  {
-    "id": "pmi-research-subject",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject",
-    "version": "0.1.0",
-    "name": "PMIResearchSubject"
-  },
-  {
-    "id": "pmi-timezone",
-    "type": "StructureDefinition",
-    "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-timezone",
-    "version": "0.1.0",
-    "name": "PMITimezone"
-  },
-  {
     "id": "pmi-verified",
     "type": "StructureDefinition",
     "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
     "version": "0.1.0",
     "name": "PMIVerified"
-  },
-  {
-    "id": "pmi-pairing-type-codes",
-    "type": "ValueSet",
-    "url": "https://pmi-ops.org/fhir/ValueSet/pmi-pairing-type-codes",
-    "version": "0.1.0",
-    "name": "PMIPairingTypeCodes"
   }
 ]

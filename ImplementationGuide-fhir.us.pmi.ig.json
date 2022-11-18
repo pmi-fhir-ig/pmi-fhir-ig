@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "PMICoreIG",
   "status": "draft",
-  "date": "2022-03-30T20:40:12+00:00",
+  "date": "2022-11-18T03:28:19+00:00",
   "publisher": "Vibrent Health",
   "contact": [
     {
@@ -18,6 +18,10 @@
         {
           "system": "url",
           "value": "https://vibrenthealth.com"
+        },
+        {
+          "system": "email",
+          "value": "anaik@vibrenthealth.com"
         }
       ]
     },
@@ -46,6 +50,20 @@
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "hl7tx",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown": "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+        }
+      ],
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "packageId": "hl7.terminology.r4",
+      "version": "5.0.0"
+    }
   ],
   "definition": {
     "extension": [
@@ -381,104 +399,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/pmi-physical-measurement-height"
-        },
-        "name": "PMI Physical Measurement Height",
-        "description": "Physican Measurement records for the participant",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/pmi-research-subject"
-        },
-        "name": "PMI Research Subject",
-        "description": "Research Subject for PMI Program",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/pmi-pairing-entities"
-        },
-        "name": "PMI Pairing Entities",
-        "description": "Entities that Participant is paired with",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/pmi-pairing-entity-code"
-        },
-        "name": "PMI Pairing Entity Code",
-        "description": "Code for the entity that Participant is paired with",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/pmi-pairing-entity-name"
-        },
-        "name": "PMI Pairing Entity Name",
-        "description": "Name of the entity that Participant is paired with",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/pmi-pairing-entity-type"
-        },
-        "name": "PMI Research Pairing Organization Type",
-        "description": "Type of entity that Participant is paired with",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/pmi-timezone"
-        },
-        "name": "PMI Timezone",
-        "description": "Timezone associated with the participant",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -493,67 +413,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/pmi-pairing-type-codes"
-        },
-        "name": "PMI Pairing Type Codes",
-        "description": "Pairing Type Codes for identifying type of pairing entity",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/pmi-pairing-type-code-system"
-        },
-        "name": "PMI Pairing Type CodeSystem",
-        "description": "Pairing Type CodeSystem for identifying type of pairing entity",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ResearchStudy"
-          }
-        ],
-        "reference": {
-          "reference": "ResearchStudy/PMI"
-        },
-        "name": "Research Study",
-        "description": "PMI Research Program",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/PMIHeightExample"
-        },
-        "name": "PMI Height Example",
-        "description": "Example of Height Physical Measurement for the participant",
-        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
         "reference": {
-          "reference": "Patient/PMIPatientWithName"
+          "reference": "Patient/P128829100"
         },
         "name": "PMI Patient With Name",
         "description": "Participant patient record with name",
@@ -567,7 +431,7 @@
           }
         ],
         "reference": {
-          "reference": "Patient/PMIPatientWithPhoneAndEmail"
+          "reference": "Patient/P128829101"
         },
         "name": "PMI Patient With Phone And Email",
         "description": "Participant patient record with phone and email records",
@@ -581,7 +445,7 @@
           }
         ],
         "reference": {
-          "reference": "Patient/PMIPatientWithSSN"
+          "reference": "Patient/P128829102"
         },
         "name": "PMI Patient With SSN",
         "description": "Participant patient record with phone and email records",
@@ -595,47 +459,31 @@
           }
         ],
         "reference": {
-          "reference": "Patient/PMIPatientWithTimezone"
+          "reference": "Patient/P128829103"
         },
         "name": "PMI Patient With TimeZone",
         "description": "Participant patient record with timezone",
         "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Consent"
-          }
-        ],
-        "reference": {
-          "reference": "Consent/PMIPrimaryConsent"
-        },
-        "name": "PMI Primary Consent",
-        "description": "Participants primary consent",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ResearchSubject"
-          }
-        ],
-        "reference": {
-          "reference": "ResearchSubject/ResearchSubjectActive"
-        },
-        "name": "Research Subject Active",
-        "description": "Participant who has completed primary consent and is active",
-        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject"
       }
     ],
     "page": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl": "toc.html"
+        }
+      ],
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
       "page": [
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "index.html"
+            }
+          ],
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"

@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://pmi-ops.org/fhir/Patient/P128829100> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "P128829100"];
+  fhir:Resource.meta [
+     fhir:Meta.source [ fhir:value "#patient-provenance" ];
+     fhir:Meta.profile [
+       fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient";
+       fhir:index 0;
+       fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Emily Bond </b> (no stated gender), DoB Unknown</p><hr/></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Provenance;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "patient-provenance" ];
+     fhir:Provenance.target [
+       fhir:index 0;
+       fhir:link <https://pmi-ops.org/fhir/Patient/P128829100>;
+       fhir:Reference.reference [ fhir:value "Patient/P128829100" ]
+     ];
+     fhir:Provenance.recorded [ fhir:value "2015-02-07T13:28:17.239+02:00"^^xsd:dateTime ];
+     fhir:Provenance.agent [
+       fhir:index 0;
+       fhir:Provenance.agent.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/provenance-participant-type" ];
+           fhir:Coding.code [ fhir:value "author" ]
+         ]
+       ];
+       fhir:Provenance.agent.who [
+         fhir:link <https://pmi-ops.org/fhir/Patient/P128829100>;
+         fhir:Reference.reference [ fhir:value "Patient/P128829100" ]
+       ]
+     ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Bond" ];
+     fhir:HumanName.given [
+       fhir:value "James";
+       fhir:index 0
+     ], [
+       fhir:value "Emily";
+       fhir:index 1
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://pmi-ops.org/fhir/Patient/P128829100.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

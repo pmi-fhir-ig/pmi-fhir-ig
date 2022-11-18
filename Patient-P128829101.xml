@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="P128829101"/>
+  <meta>
+    <source value="#patient-provenance"/>
+    <profile value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Anonymous Patient</b> (no stated gender), DoB Unknown</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href="mailto:patient@example.org">patient@example.org</a></li></ul></td></tr></table></div>
+  </text>
+  <contained>
+    <Provenance>
+      <id value="patient-provenance"/>
+      <target>
+        <reference value="Patient/P128829100"/>
+      </target>
+      <recorded value="2015-02-07T13:28:17.239+02:00"/>
+      <agent>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+            <code value="author"/>
+          </coding>
+        </type>
+        <who>
+          <reference value="Patient/P128829100"/>
+        </who>
+      </agent>
+    </Provenance>
+  </contained>
+  <telecom>
+    <system value="phone"/>
+    <value value="2405553920"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <extension url="https://pmi-ops.org/fhir/StructureDefinition/pmi-verified">
+      <valueBoolean value="true"/>
+    </extension>
+    <system value="phone"/>
+    <value value="2405553920"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <extension url="https://pmi-ops.org/fhir/StructureDefinition/pmi-verified">
+      <valueBoolean value="true"/>
+    </extension>
+    <system value="email"/>
+    <value value="patient@example.org"/>
+    <use value="home"/>
+  </telecom>
+</Patient>

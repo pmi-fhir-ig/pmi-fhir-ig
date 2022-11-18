@@ -4,90 +4,6 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities",
-      "title": "PMI Pairing Entities",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code",
-      "title": "PMI Pairing Entity Code",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name",
-      "title": "PMI Pairing Entity Name",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type",
-      "title": "PMI Research Pairing Organization Type",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-timezone",
-      "title": "PMI Timezone",
-      "types": [
-        "code"
-      ]
-    },
-    {
       "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
       "title": "PMI Verified",
       "types": [
@@ -100,18 +16,6 @@
       {
         "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient",
         "title": "PMI Patient"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-physical-measurement-height",
-        "title": "PMI Physical Measurement Height"
-      }
-    ],
-    "ResearchSubject": [
-      {
-        "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-research-subject",
-        "title": "PMI Research Subject"
       }
     ]
   },
@@ -131,14 +35,8 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
@@ -152,26 +50,18 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entities": [
-      "ResearchSubject"
-    ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-code": [
-      "Extension"
-    ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-name": [
-      "Extension"
-    ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmi-pairing-entity-type": [
-      "Extension"
-    ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmi-timezone": [
-      "Patient"
     ],
     "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified": [
       "Patient.address",
