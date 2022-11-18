@@ -3,7 +3,7 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="P128829103"/>
   <meta>
-    <source value="#patient-provenance"/>
+    <source value="#cati-provenance"/>
     <profile value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
   </meta>
   <text>
@@ -11,9 +11,9 @@
   </text>
   <contained>
     <Provenance>
-      <id value="patient-provenance"/>
+      <id value="cati-provenance"/>
       <target>
-        <reference value="Patient/P128829100"/>
+        <reference value="Patient/P128829103"/>
       </target>
       <recorded value="2015-02-07T13:28:17.239+02:00"/>
       <agent>
@@ -24,10 +24,22 @@
           </coding>
         </type>
         <who>
-          <reference value="Patient/P128829100"/>
+          <reference value="#cati-author"/>
         </who>
       </agent>
     </Provenance>
+  </contained>
+  <contained>
+    <Organization>
+      <id value="cati-author"/>
+      <name value="PTSC"/>
+      <contact>
+        <telecom>
+          <system value="email"/>
+          <value value="cati-user@example.org"/>
+        </telecom>
+      </contact>
+    </Organization>
   </contained>
   <name>
     <family value="Bond"/>

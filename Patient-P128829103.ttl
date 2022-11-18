@@ -9,7 +9,7 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P128829103"];
   fhir:Resource.meta [
-     fhir:Meta.source [ fhir:value "#patient-provenance" ];
+     fhir:Meta.source [ fhir:value "#cati-provenance" ];
      fhir:Meta.profile [
        fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient";
        fhir:index 0;
@@ -23,11 +23,11 @@
   fhir:DomainResource.contained [
      a fhir:Provenance;
      fhir:index 0;
-     fhir:Resource.id [ fhir:value "patient-provenance" ];
+     fhir:Resource.id [ fhir:value "cati-provenance" ];
      fhir:Provenance.target [
        fhir:index 0;
-       fhir:link <https://pmi-ops.org/fhir/Patient/P128829100>;
-       fhir:Reference.reference [ fhir:value "Patient/P128829100" ]
+       fhir:link <https://pmi-ops.org/fhir/Patient/P128829103>;
+       fhir:Reference.reference [ fhir:value "Patient/P128829103" ]
      ];
      fhir:Provenance.recorded [ fhir:value "2015-02-07T13:28:17.239+02:00"^^xsd:dateTime ];
      fhir:Provenance.agent [
@@ -40,8 +40,20 @@
          ]
        ];
        fhir:Provenance.agent.who [
-         fhir:link <https://pmi-ops.org/fhir/Patient/P128829100>;
-         fhir:Reference.reference [ fhir:value "Patient/P128829100" ]
+         fhir:Reference.reference [ fhir:value "#cati-author" ]
+       ]
+     ]
+  ], [
+     a fhir:Organization;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "cati-author" ];
+     fhir:Organization.name [ fhir:value "PTSC" ];
+     fhir:Organization.contact [
+       fhir:index 0;
+       fhir:Organization.contact.telecom [
+         fhir:index 0;
+         fhir:ContactPoint.system [ fhir:value "email" ];
+         fhir:ContactPoint.value [ fhir:value "cati-user@example.org" ]
        ]
      ]
   ];

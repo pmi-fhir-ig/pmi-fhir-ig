@@ -2,7 +2,7 @@
   "resourceType": "Patient",
   "id": "P128829103",
   "meta": {
-    "source": "#patient-provenance",
+    "source": "#cati-provenance",
     "profile": [
       "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
     ]
@@ -14,10 +14,10 @@
   "contained": [
     {
       "resourceType": "Provenance",
-      "id": "patient-provenance",
+      "id": "cati-provenance",
       "target": [
         {
-          "reference": "Patient/P128829100"
+          "reference": "Patient/P128829103"
         }
       ],
       "recorded": "2015-02-07T13:28:17.239+02:00",
@@ -32,8 +32,23 @@
             ]
           },
           "who": {
-            "reference": "Patient/P128829100"
+            "reference": "#cati-author"
           }
+        }
+      ]
+    },
+    {
+      "resourceType": "Organization",
+      "id": "cati-author",
+      "name": "PTSC",
+      "contact": [
+        {
+          "telecom": [
+            {
+              "system": "email",
+              "value": "cati-user@example.org"
+            }
+          ]
         }
       ]
     }

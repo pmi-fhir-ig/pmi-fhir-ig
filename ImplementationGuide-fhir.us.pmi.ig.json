@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "PMICoreIG",
   "status": "draft",
-  "date": "2022-11-18T03:28:19+00:00",
+  "date": "2022-11-18T05:07:50+00:00",
   "publisher": "Vibrent Health",
   "contact": [
     {
@@ -419,36 +419,8 @@
         "reference": {
           "reference": "Patient/P128829100"
         },
-        "name": "PMI Patient With Name",
-        "description": "Participant patient record with name",
-        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/P128829101"
-        },
-        "name": "PMI Patient With Phone And Email",
-        "description": "Participant patient record with phone and email records",
-        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/P128829102"
-        },
-        "name": "PMI Patient With SSN",
-        "description": "Participant patient record with phone and email records",
+        "name": "PMI Patient with Self Updates",
+        "description": "PMI Patient profile information which was updated by the participant",
         "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
       },
       {
@@ -461,8 +433,8 @@
         "reference": {
           "reference": "Patient/P128829103"
         },
-        "name": "PMI Patient With TimeZone",
-        "description": "Participant patient record with timezone",
+        "name": "PMI Patient With CATI Updates",
+        "description": "PMI Patient profile information which was updated by the CATI User",
         "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
       }
     ],

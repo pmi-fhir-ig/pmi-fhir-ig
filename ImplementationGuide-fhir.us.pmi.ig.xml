@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="PMICoreIG"/>
   <status value="draft"/>
-  <date value="2022-11-18T03:28:19+00:00"/>
+  <date value="2022-11-18T05:07:50+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -271,30 +271,8 @@
       <reference>
         <reference value="Patient/P128829100"/>
       </reference>
-      <name value="PMI Patient With Name"/>
-      <description value="Participant patient record with name"/>
-      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/P128829101"/>
-      </reference>
-      <name value="PMI Patient With Phone And Email"/>
-      <description value="Participant patient record with phone and email records"/>
-      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/P128829102"/>
-      </reference>
-      <name value="PMI Patient With SSN"/>
-      <description value="Participant patient record with phone and email records"/>
+      <name value="PMI Patient with Self Updates"/>
+      <description value="PMI Patient profile information which was updated by the participant"/>
       <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
     </resource>
     <resource>
@@ -304,8 +282,8 @@
       <reference>
         <reference value="Patient/P128829103"/>
       </reference>
-      <name value="PMI Patient With TimeZone"/>
-      <description value="Participant patient record with timezone"/>
+      <name value="PMI Patient With CATI Updates"/>
+      <description value="PMI Patient profile information which was updated by the CATI User"/>
       <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
     </resource>
     <page>
