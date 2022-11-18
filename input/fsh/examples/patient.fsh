@@ -4,7 +4,8 @@ Usage: #example
 Title: "PMI Patient With Name"
 Description: "Participant patient record with name"
 * meta.profile[0] = "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
-* contained[Provenance] = patient-provenance
+* meta.source = "#patient-provenance"
+* contained = patient-provenance
 * id = "P128829100"
 * name
   * given[0] = "James"
@@ -17,7 +18,8 @@ Usage: #example
 Title: "PMI Patient With Phone And Email"
 Description: "Participant patient record with phone and email records"
 * meta.profile[0] = "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
-* contained[Provenance] = patient-provenance
+* meta.source = "#patient-provenance"
+* contained = patient-provenance
 * id = "P128829101"
 * telecom[0]
   * system = http://hl7.org/fhir/contact-point-system#phone
@@ -40,7 +42,8 @@ Usage: #example
 Title: "PMI Patient With SSN"
 Description: "Participant patient record with phone and email records"
 * meta.profile[0] = "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
-* contained[Provenance] = patient-provenance
+* meta.source = "#patient-provenance"
+* contained = patient-provenance
 * id = "P128829102"
 * identifier[SSN]
   * use = #official
@@ -54,7 +57,8 @@ Usage: #example
 Title: "PMI Patient With TimeZone"
 Description: "Participant patient record with timezone"
 * meta.profile[0] = "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
-* contained[Provenance] = patient-provenance
+* meta.source = "#patient-provenance"
+* contained = patient-provenance
 * id = "P128829103"
 * name
   * given[0] = "James"
@@ -67,23 +71,5 @@ Usage: #inline
 * recorded = "2015-02-07T13:28:17.239+02:00"
 * target = Reference(PMIPatientWithName)
 * agent
-  * type = #author
-  * who = Reference(PMIPatientWithName)
-
-Instance: cati-provenance
-InstanceOf: Provenance
-Usage: #inline
-* recorded = "2015-02-07T13:28:17.239+02:00"
-* target = Reference(PMIPatientWithName)
-* agent
-  * type = #author
-  * who = Reference(PMIPatientWithName)
-
-Instance: system-provenance
-InstanceOf: Provenance
-Usage: #inline
-* recorded = "2015-02-07T13:28:17.239+02:00"
-* target = Reference(PMIPatientWithName)
-* agent
-  * type = #author
+  * type = http://terminology.hl7.org/CodeSystem/provenance-participant-type#author
   * who = Reference(PMIPatientWithName)
