@@ -4,12 +4,12 @@
   "meta": {
     "source": "#participant-provenance",
     "profile": [
-      "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
+      "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Emily Bond </b> (no stated gender), DoB Unknown ( Social Security number: 578448930(use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href=\"mailto:patient@example.org\">patient@example.org</a></li></ul></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Emily Bond </b> (no stated gender), DoB Unknown ( Social Security number: 578448930 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href=\"mailto:patient@example.org\">patient@example.org</a></li></ul></td></tr></table></div>"
   },
   "contained": [
     {
@@ -71,7 +71,7 @@
     {
       "extension": [
         {
-          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
+          "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified",
           "valueBoolean": true
         }
       ],
@@ -82,7 +82,7 @@
     {
       "extension": [
         {
-          "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
+          "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified",
           "valueBoolean": true
         }
       ],

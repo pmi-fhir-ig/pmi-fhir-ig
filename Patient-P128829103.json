@@ -4,7 +4,7 @@
   "meta": {
     "source": "#cati-provenance",
     "profile": [
-      "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
+      "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"
     ]
   },
   "text": {

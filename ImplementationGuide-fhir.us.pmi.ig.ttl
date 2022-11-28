@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig> a fhir:ImplementationGuide;
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "fhir.us.pmi.ig"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PMICoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PMICoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.url [ fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.1"];
   fhir:ImplementationGuide.name [ fhir:value "PMICoreIG"];
-  fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-11-18T05:07:50+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.status [ fhir:value "active"];
+  fhir:ImplementationGuide.date [ fhir:value "2022-11-28T03:49:15+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Vibrent Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -92,7 +92,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "ci-build" ]
+         fhir:Extension.valueString [ fhir:value "trial-use" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -104,7 +104,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -236,7 +236,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "https://pmi-ops.org/fhir/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -368,7 +368,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>;
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Patient" ];
@@ -382,7 +382,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-verified>;
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-verified" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Verified" ];
@@ -396,14 +396,14 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/Patient/P128829100>;
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/Patient/P128829100>;
          fhir:Reference.reference [ fhir:value "Patient/P128829100" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Patient with Self Updates" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PMI Patient profile information which was updated by the participant" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient";
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
+         fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient";
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
        ]
      ], [
        fhir:index 3;
@@ -413,14 +413,14 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://pmi-ops.org/fhir/Patient/P128829103>;
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/Patient/P128829103>;
          fhir:Reference.reference [ fhir:value "Patient/P128829103" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Patient With CATI Updates" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PMI Patient profile information which was updated by the CATI User" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient";
-         fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
+         fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient";
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
        ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -441,6 +441,16 @@
          ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "history.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "history.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "History" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];
@@ -509,7 +519,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig.ttl> a owl:Ontology;
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

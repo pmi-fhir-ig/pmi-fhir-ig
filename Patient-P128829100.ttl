@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://pmi-ops.org/fhir/Patient/P128829100> a fhir:Patient;
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/Patient/P128829100> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P128829100"];
   fhir:Resource.meta [
      fhir:Meta.source [ fhir:value "#participant-provenance" ];
      fhir:Meta.profile [
-       fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient";
+       fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient";
        fhir:index 0;
-       fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
+       fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Emily Bond </b> (no stated gender), DoB Unknown ( Social Security number: 578448930(use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href=\"mailto:patient@example.org\">patient@example.org</a></li></ul></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Emily Bond </b> (no stated gender), DoB Unknown ( Social Security number: 578448930 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href=\"mailto:patient@example.org\">patient@example.org</a></li></ul></td></tr></table></div>"
   ];
   fhir:DomainResource.contained [
      a fhir:Provenance;
@@ -26,7 +26,7 @@
      fhir:Resource.id [ fhir:value "participant-provenance" ];
      fhir:Provenance.target [
        fhir:index 0;
-       fhir:link <https://pmi-ops.org/fhir/Patient/P128829100>;
+       fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/Patient/P128829100>;
        fhir:Reference.reference [ fhir:value "Patient/P128829100" ]
      ];
      fhir:Provenance.recorded [ fhir:value "2015-02-07T13:28:17.239+02:00"^^xsd:dateTime ];
@@ -40,7 +40,7 @@
          ]
        ];
        fhir:Provenance.agent.who [
-         fhir:link <https://pmi-ops.org/fhir/Patient/P128829100>;
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/Patient/P128829100>;
          fhir:Reference.reference [ fhir:value "Patient/P128829100" ]
        ]
      ]
@@ -78,7 +78,7 @@
      fhir:index 1;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified" ];
+       fhir:Extension.url [ fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified" ];
        fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ContactPoint.system [ fhir:value "phone" ];
@@ -88,7 +88,7 @@
      fhir:index 2;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified" ];
+       fhir:Extension.url [ fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified" ];
        fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ContactPoint.system [ fhir:value "email" ];
@@ -98,7 +98,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://pmi-ops.org/fhir/Patient/P128829100.ttl> a owl:Ontology;
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/Patient/P128829100.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

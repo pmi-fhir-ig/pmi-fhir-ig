@@ -4,10 +4,10 @@
   <id value="P128829100"/>
   <meta>
     <source value="#participant-provenance"/>
-    <profile value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
+    <profile value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>James Emily Bond </b> (no stated gender), DoB Unknown ( Social Security number: 578448930(use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href="mailto:patient@example.org">patient@example.org</a></li></ul></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>James Emily Bond </b> (no stated gender), DoB Unknown ( Social Security number: 578448930 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href="mailto:patient@example.org">patient@example.org</a></li></ul></td></tr></table></div>
   </text>
   <contained>
     <Provenance>
@@ -51,7 +51,7 @@
     <use value="home"/>
   </telecom>
   <telecom>
-    <extension url="https://pmi-ops.org/fhir/StructureDefinition/pmi-verified">
+    <extension url="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified">
       <valueBoolean value="true"/>
     </extension>
     <system value="phone"/>
@@ -59,7 +59,7 @@
     <use value="home"/>
   </telecom>
   <telecom>
-    <extension url="https://pmi-ops.org/fhir/StructureDefinition/pmi-verified">
+    <extension url="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified">
       <valueBoolean value="true"/>
     </extension>
     <system value="email"/>

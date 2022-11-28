@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="fhir.us.pmi.ig"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PMICoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PMICoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig</pre></div>
   </text>
-  <url value="https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig"/>
-  <version value="0.1.0"/>
+  <url value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig"/>
+  <version value="0.1.1"/>
   <name value="PMICoreIG"/>
-  <status value="draft"/>
-  <date value="2022-11-18T05:07:50+00:00"/>
+  <status value="active"/>
+  <date value="2022-11-28T03:49:15+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -63,7 +63,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="trial-use"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -71,7 +71,7 @@
         <valueString value="propagate-status"/>
       </extension>
       <extension url="value">
-        <valueString value="true"/>
+        <valueString value="false"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -159,7 +159,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://pmi-ops.org/fhir/history.html"/>
+        <valueString value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -273,7 +273,7 @@
       </reference>
       <name value="PMI Patient with Self Updates"/>
       <description value="PMI Patient profile information which was updated by the participant"/>
-      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
+      <exampleCanonical value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -284,7 +284,7 @@
       </reference>
       <name value="PMI Patient With CATI Updates"/>
       <description value="PMI Patient profile information which was updated by the CATI User"/>
-      <exampleCanonical value="https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"/>
+      <exampleCanonical value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -299,6 +299,14 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="history.html"/>
+        </extension>
+        <nameUrl value="history.html"/>
+        <title value="History"/>
         <generation value="markdown"/>
       </page>
     </page>

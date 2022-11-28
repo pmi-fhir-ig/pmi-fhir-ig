@@ -60,7 +60,7 @@
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.1.1 - trial-use</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -91,6 +91,9 @@
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="history.html">History</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -124,7 +127,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">PMICoreIG - Local Development build (v0.1.0). See the <a href="https://pmi-ops.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">PMICoreIG - Local Development build (v0.1.1). See the <a href="https://pmi-fhir-ig.github.io/pmi-fhir-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -146,7 +149,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="introduction">Introduction</h3>
 
-<p>The PMI Core Implementation guide is based on FHIR Version R4 and defines the minimum set of constraints on the FHIR resources to create the profiles. It also defined the minimum set of FHIR RESTFUL interactions for each of the profiles to access information.</p>
+<p>The PMI Core Implementation guide is based on <a href="http://hl7.org/fhir/R4/index.html">FHIR Version R4</a> and defines the minimum set of constraints
+on the FHIR resources that shall be supported by the implementers.</p>
 
 <h3 id="resource-profiles">Resource Profiles</h3>
 
@@ -162,7 +166,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tbody>
     <tr>
       <td>Participant Data</td>
-      <td><code class="language-plaintext highlighter-rouge">Patient</code></td>
+      <td><a href="StructureDefinition-pmi-patient.html"><code class="language-plaintext highlighter-rouge">Patient</code></a></td>
       <td><img src="mustsupport.png" alt="Done" /></td>
       <td>This is the individual who is participating in the study</td>
     </tr>
@@ -194,7 +198,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://vibrenthealth.com">Vibrent Health</a>.  Package fhir.us.pmi.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 18, 2022 05:07+0000">2022-11-18</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://vibrenthealth.com">Vibrent Health</a>.  Package fhir.us.pmi.ig#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 28, 2022 03:49+0000">2022-11-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

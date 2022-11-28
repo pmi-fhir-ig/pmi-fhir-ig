@@ -1,10 +1,10 @@
 {
   "package": "fhir.us.pmi.ig",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified",
+      "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified",
       "title": "PMI Verified",
       "types": [
         "boolean"
@@ -14,7 +14,7 @@
   "profiles": {
     "Patient": [
       {
-        "url": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient",
+        "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient",
         "title": "PMI Patient"
       }
     ]
@@ -63,7 +63,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://pmi-ops.org/fhir/StructureDefinition/pmi-verified": [
+    "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified": [
       "Patient.address",
       "Patient.telecom"
     ]

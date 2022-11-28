@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://pmi-ops.org/fhir/Patient/P128829103> a fhir:Patient;
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/Patient/P128829103> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "P128829103"];
   fhir:Resource.meta [
      fhir:Meta.source [ fhir:value "#cati-provenance" ];
      fhir:Meta.profile [
-       fhir:value "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient";
+       fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient";
        fhir:index 0;
-       fhir:link <https://pmi-ops.org/fhir/StructureDefinition/pmi-patient>
+       fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
      ]
   ];
   fhir:DomainResource.text [
@@ -26,7 +26,7 @@
      fhir:Resource.id [ fhir:value "cati-provenance" ];
      fhir:Provenance.target [
        fhir:index 0;
-       fhir:link <https://pmi-ops.org/fhir/Patient/P128829103>;
+       fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/Patient/P128829103>;
        fhir:Reference.reference [ fhir:value "Patient/P128829103" ]
      ];
      fhir:Provenance.recorded [ fhir:value "2015-02-07T13:28:17.239+02:00"^^xsd:dateTime ];
@@ -71,7 +71,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://pmi-ops.org/fhir/Patient/P128829103.ttl> a owl:Ontology;
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/Patient/P128829103.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

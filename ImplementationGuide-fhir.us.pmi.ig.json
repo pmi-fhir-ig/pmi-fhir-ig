@@ -3,13 +3,13 @@
   "id": "fhir.us.pmi.ig",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PMICoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PMICoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig</pre></div>"
   },
-  "url": "https://pmi-ops.org/fhir/ImplementationGuide/fhir.us.pmi.ig",
-  "version": "0.1.0",
+  "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig",
+  "version": "0.1.1",
   "name": "PMICoreIG",
-  "status": "draft",
-  "date": "2022-11-18T05:07:50+00:00",
+  "status": "active",
+  "date": "2022-11-28T03:49:15+00:00",
   "publisher": "Vibrent Health",
   "contact": [
     {
@@ -88,7 +88,7 @@
           },
           {
             "url": "value",
-            "valueString": "ci-build"
+            "valueString": "trial-use"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -101,7 +101,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -244,7 +244,7 @@
           },
           {
             "url": "value",
-            "valueString": "https://pmi-ops.org/fhir/history.html"
+            "valueString": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -421,7 +421,7 @@
         },
         "name": "PMI Patient with Self Updates",
         "description": "PMI Patient profile information which was updated by the participant",
-        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
+        "exampleCanonical": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"
       },
       {
         "extension": [
@@ -435,7 +435,7 @@
         },
         "name": "PMI Patient With CATI Updates",
         "description": "PMI Patient profile information which was updated by the CATI User",
-        "exampleCanonical": "https://pmi-ops.org/fhir/StructureDefinition/pmi-patient"
+        "exampleCanonical": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"
       }
     ],
     "page": {
@@ -458,6 +458,17 @@
           ],
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "history.html"
+            }
+          ],
+          "nameUrl": "history.html",
+          "title": "History",
           "generation": "markdown"
         }
       ]
