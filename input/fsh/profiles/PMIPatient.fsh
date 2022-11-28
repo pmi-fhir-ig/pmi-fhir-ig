@@ -7,10 +7,14 @@ Description: "Participant profile"
   * source 1..1 MS
   * source ^short = "Reference to the contained Provenance"
 * contained 1..* MS
-  * ^slicing.discriminator.type = #profile
-  * ^slicing.discriminator.path = "type"
+  * ^slicing.discriminator.type = #type
+  * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #closed
 * contained only Provenance or Organization
+* contained contains provenance 0..1
+* contained[provenance] only Provenance
+* contained contains author 0..1
+* contained[author] only Organization
 * id ^short = "Participant ID e.g. P12345678"
 * identifier 0..1 MS
   * ^short = "Identifiers for the patient"
