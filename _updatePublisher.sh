@@ -1,5 +1,5 @@
 #!/bin/bash
-pubsource=https://github.com/HL7/fhir-ig-publisher/releases/download/1.2.23/
+pubsource=https://github.com/HL7/fhir-ig-publisher/releases/download/1.2.22/
 publisher_jar=publisher.jar
 dlurl=$pubsource$publisher_jar
 
@@ -89,7 +89,7 @@ else
 fi
 if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
 
-	echo "Downloading most recent publisher to $jarlocationname - it's ~100 MB, so this may take a bit"
+	echo "Downloading $dlurl publisher to $jarlocationname - it's ~100 MB, so this may take a bit"
 	curl -L $dlurl -o "$jarlocation" --create-dirs
 else
 	echo cancelled publisher update
