@@ -1,5 +1,5 @@
 #!/bin/bash
-pubsource=https://github.com/HL7/fhir-ig-publisher/releases/latest/download/
+pubsource=https://github.com/HL7/fhir-ig-publisher/releases/download/1.2.22/
 publisher_jar=publisher.jar
 dlurl=$pubsource$publisher_jar
 
@@ -89,41 +89,8 @@ else
 fi
 if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
 
-	echo "Downloading most recent publisher to $jarlocationname - it's ~100 MB, so this may take a bit"
+	echo "Downloading $dlurl publisher to $jarlocationname - it's ~100 MB, so this may take a bit"
 	curl -L $dlurl -o "$jarlocation" --create-dirs
 else
 	echo cancelled publisher update
-fi
-
-if [[ $skipPrompts != true ]]; then
-    message="Update scripts? (enter 'y' or 'Y' to continue, any other key to cancel)?"
-    read -r -p "$message" response
-  fi
-
-if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
-  echo "Downloading most recent scripts "
-
-  curl -L $update_bat_url -o /tmp/_updatePublisher.new
-  cp /tmp/_updatePublisher.new _updatePublisher.bat
-  rm /tmp/_updatePublisher.new
-
-  curl -L $gen_bat_url -o /tmp/_genonce.new
-  cp /tmp/_genonce.new _genonce.bat
-  rm /tmp/_genonce.new
-
-  curl -L $gencont_bat_url -o /tmp/_gencontinuous.new
-  cp /tmp/_gencontinuous.new _gencontinuous.bat
-  rm /tmp/_gencontinuous.new
-
-  curl -L $gencont_sh_url -o /tmp/_gencontinuous.new
-  cp /tmp/_gencontinuous.new _gencontinuous.sh
-  rm /tmp/_gencontinuous.new
-
-  curl -L $gen_sh_url -o /tmp/_genonce.new
-  cp /tmp/_genonce.new _genonce.sh
-  rm  /tmp/_genonce.new
-
-  curl -L $update_sh_url -o /tmp/_updatePublisher.new
-  cp /tmp/_updatePublisher.new _updatePublisher.sh
-  rm /tmp/_updatePublisher.new
 fi
