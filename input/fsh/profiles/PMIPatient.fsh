@@ -32,13 +32,23 @@ Description: "Participant profile"
   * system = "http://hl7.org/fhir/sid/us-ssn"
   * value ^short = "Social Security Number"
 * active 0..0
-* name 0..1 MS
-* name
+* name 0..2 MS
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "use"
+  * ^slicing.rules = #closed
+* name contains official 0..1 MS
+* name[official]
   * use = #official
   * family MS
   * family ^short = "Last name of the participant"
   * given MS
   * given ^short = "First and Middle name (if any) provided as array of strings"
+  * suffix MS
+* name contains preferred 0..1 MS
+* name[preferred]
+  * use = #nickname
+  * given MS
+  * given ^short = "Nick name for the participant"
 * telecom MS
   * period 0..0
   * extension 0..1
@@ -60,8 +70,10 @@ Description: "Participant profile"
   * extension 0..1
   * extension contains
     PMIVerified named verifiedAddress 0..1 MS
-* communication
-  * ^isModifier = false
+* communication 0..1 MS
+  * preferred = true
+  * language from http://hl7.org/fhir/ValueSet/languages
+    * ^short = "Language preference for the participant"
 * multipleBirth[x] 0..0
 * gender 0..0
 * maritalStatus 0..0
@@ -72,6 +84,8 @@ Description: "Participant profile"
   * relationship 0..1 MS
   * relationship = http://terminology.hl7.org/CodeSystem/v2-0131#CP
   * name 1..1 MS
+  * telecom MS
+  * address MS
   * gender 0..0
   * organization 0..0
   * period 0..0
