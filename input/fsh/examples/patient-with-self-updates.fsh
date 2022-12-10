@@ -1,11 +1,11 @@
-Instance: PMIPatientWithSelfUpdates
+Instance: PMIPatientWithSelfUpdatesExample
 InstanceOf: PMIPatient
 Usage: #example
 Title: "PMI Patient with Self Updates"
 Description: "PMI Patient profile information which was updated by the participant"
-* meta.profile[0] = "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"
-* meta.source = "#participant-provenance"
-* contained[provenance] = participant-provenance
+* meta.profile = Canonical(pmi-patient)
+* meta.source = "#PMIParticipantProvenanceExample"
+* contained[provenance] = PMIParticipantProvenanceExample
 * id = "P128829100"
 * name
   * given[0] = "James"

@@ -1,12 +1,12 @@
-Instance: PMIPatientWithCATIUpdates
+Instance: PMIPatientWithCATIUpdatesExample
 InstanceOf: PMIPatient
 Usage: #example
 Title: "PMI Patient With CATI Updates"
 Description: "PMI Patient profile information which was updated by the CATI User"
-* meta.profile[0] = "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"
-* meta.source = "#cati-provenance"
-* contained[provenance] = cati-provenance
-* contained[author] = cati-author
+* meta.profile = Canonical(pmi-patient)
+* meta.source = "#PMICATIProvenanceExample"
+* contained[provenance] = PMICATIProvenanceExample
+* contained[author] = PMICATIAuthorExample
 * id = "P128829103"
 * name
   * given[0] = "James"
