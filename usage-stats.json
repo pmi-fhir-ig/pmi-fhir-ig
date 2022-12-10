@@ -17,6 +17,12 @@
         "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient",
         "title": "PMI Patient"
       }
+    ],
+    "Provenance": [
+      {
+        "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance",
+        "title": "PMI Provenance"
+      }
     ]
   },
   "usage": {
@@ -34,6 +40,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"

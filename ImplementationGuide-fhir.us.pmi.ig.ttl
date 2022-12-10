@@ -7,17 +7,17 @@
 
 <https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "fhir.us.pmi.ig"];
+  fhir:Resource.id [ fhir:value "fhir.us.pmi.ig"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PMICoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig</pre></div>"
-  ];
-  fhir:ImplementationGuide.url [ fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.1"];
-  fhir:ImplementationGuide.name [ fhir:value "PMICoreIG"];
-  fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-11-28T03:49:15+00:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.publisher [ fhir:value "Vibrent Health"];
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "0.1.1"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "PMICoreIG"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "active"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2022-12-10T18:39:43+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "Vibrent Health"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Vibrent Health" ];
@@ -48,13 +48,13 @@
        fhir:ContactPoint.value [ fhir:value "duribe@vibrenthealth.com" ];
        fhir:ContactPoint.use [ fhir:value "work" ]
      ]
-  ];
-  fhir:ImplementationGuide.packageId [ fhir:value "fhir.us.pmi.ig"];
-  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  ]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "fhir.us.pmi.ig"]; # 
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"]; # 
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
      fhir:index 0
-  ];
+  ]; # 
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
      fhir:Element.id [ fhir:value "hl7tx" ];
@@ -69,7 +69,7 @@
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
-  ];
+  ]; # 
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
        fhir:index 0;
@@ -379,6 +379,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pmi-provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Provenance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PMI Provenance profile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -389,7 +403,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Flag to indicate verified information" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -406,7 +420,7 @@
          fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -421,6 +435,54 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient";
          fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/Organization/PMICATIAuthorExample>;
+         fhir:Reference.reference [ fhir:value "Organization/PMICATIAuthorExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI CATI Provenance Author for Update" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PMI CATI Author example to be included in the participants patient object" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/Provenance/PMICATIProvenanceExample>;
+         fhir:Reference.reference [ fhir:value "Provenance/PMICATIProvenanceExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI CATI Provenance for Update" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PMI CATI Provenance example to be included in the participants patient object" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance";
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance>
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/Provenance/PMIParticipantProvenanceExample>;
+         fhir:Reference.reference [ fhir:value "Provenance/PMIParticipantProvenanceExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Participant Provenance for Update" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PMI Participant Provenance example to be included in the participants patient object" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance";
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance>
        ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -515,7 +577,7 @@
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

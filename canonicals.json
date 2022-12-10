@@ -1,23 +1,30 @@
 [
   {
-    "id": "fhir.us.pmi.ig",
-    "type": "ImplementationGuide",
-    "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig",
-    "version": "0.1.1",
-    "name": "PMICoreIG"
+    "id" : "fhir.us.pmi.ig",
+    "type" : "ImplementationGuide",
+    "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig",
+    "version" : "0.1.1",
+    "name" : "PMICoreIG"
   },
   {
-    "id": "pmi-patient",
-    "type": "StructureDefinition",
-    "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient",
-    "version": "0.1.1",
-    "name": "PMIPatient"
+    "id" : "pmi-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient",
+    "version" : "0.1.1",
+    "name" : "PMIPatient"
   },
   {
-    "id": "pmi-verified",
-    "type": "StructureDefinition",
-    "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified",
-    "version": "0.1.1",
-    "name": "PMIVerified"
+    "id" : "pmi-provenance",
+    "type" : "StructureDefinition",
+    "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance",
+    "version" : "0.1.1",
+    "name" : "PMIProvenance"
+  },
+  {
+    "id" : "pmi-verified",
+    "type" : "StructureDefinition",
+    "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified",
+    "version" : "0.1.1",
+    "name" : "PMIVerified"
   }
 ]

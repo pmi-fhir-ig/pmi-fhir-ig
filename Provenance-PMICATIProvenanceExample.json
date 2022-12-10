@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Provenance",
+  "id" : "PMICATIProvenanceExample",
+  "meta" : {
+    "profile" : ["https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"PMICATIProvenanceExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance &quot;PMICATIProvenanceExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pmi-provenance.html\">PMI Provenance</a></p></div><p><b>target</b>: <a href=\"Patient-P128829103.html\">Patient/P128829103</a> &quot; BOND&quot;</p><p><b>recorded</b>: Feb 7, 2015, 11:28:17 AM</p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Who</b></td></tr><tr><td>*</td><td>Author <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-provenance-participant-type.html\">Provenance participant type</a>#author)</span></td><td><a href=\"Organization-PMICATIAuthorExample.html\">Organization/PMICATIAuthorExample</a> &quot;PTSC&quot;</td></tr></table></div>"
+  },
+  "target" : [{
+    "reference" : "Patient/P128829103"
+  }],
+  "recorded" : "2015-02-07T13:28:17.239+02:00",
+  "agent" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+        "code" : "author"
+      }]
+    },
+    "who" : {
+      "reference" : "Organization/PMICATIAuthorExample"
+    }
+  }]
+}

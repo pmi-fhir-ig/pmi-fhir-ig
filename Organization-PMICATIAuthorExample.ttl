@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/Organization/PMICATIAuthorExample> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PMICATIAuthorExample"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"PMICATIAuthorExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;PMICATIAuthorExample&quot; </p></div><p><b>name</b>: PTSC</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td><a href=\"mailto:cati-user@example.org\">cati-user@example.org</a></td></tr></table></div>"
+  ]; # 
+  fhir:Organization.name [ fhir:value "PTSC"]; # 
+  fhir:Organization.contact [
+     fhir:index 0;
+     fhir:Organization.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "cati-user@example.org" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/Organization/PMICATIAuthorExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

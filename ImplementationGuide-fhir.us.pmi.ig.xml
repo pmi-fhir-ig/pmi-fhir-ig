@@ -9,7 +9,7 @@
   <version value="0.1.1"/>
   <name value="PMICoreIG"/>
   <status value="active"/>
-  <date value="2022-11-28T03:49:15+00:00"/>
+  <date value="2022-12-10T18:39:43+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -255,6 +255,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pmi-provenance"/>
+      </reference>
+      <name value="PMI Provenance"/>
+      <description value="PMI Provenance profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -285,6 +296,39 @@
       <name value="PMI Patient With CATI Updates"/>
       <description value="PMI Patient profile information which was updated by the CATI User"/>
       <exampleCanonical value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/PMICATIAuthorExample"/>
+      </reference>
+      <name value="PMI CATI Provenance Author for Update"/>
+      <description value="PMI CATI Author example to be included in the participants patient object"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/PMICATIProvenanceExample"/>
+      </reference>
+      <name value="PMI CATI Provenance for Update"/>
+      <description value="PMI CATI Provenance example to be included in the participants patient object"/>
+      <exampleCanonical value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/PMIParticipantProvenanceExample"/>
+      </reference>
+      <name value="PMI Participant Provenance for Update"/>
+      <description value="PMI Participant Provenance example to be included in the participants patient object"/>
+      <exampleCanonical value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

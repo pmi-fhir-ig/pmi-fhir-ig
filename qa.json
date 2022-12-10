@@ -1,12 +1,12 @@
 {
-  "url": "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig",
-  "name": "PMICoreIG",
-  "package-id": "fhir.us.pmi.ig",
-  "ig-ver": "0.1.1",
-  "date": "Mon, 28 Nov, 2022 03:49:15 +0000",
-  "errs": 0,
-  "warnings": 0,
-  "hints": 0,
-  "version": "4.0.1",
-  "tool": "5.0.0-ballot (3)"
+  "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig",
+  "name" : "PMICoreIG",
+  "package-id" : "fhir.us.pmi.ig",
+  "ig-ver" : "0.1.1",
+  "date" : "Sat, 10 Dec, 2022 18:39:43 +0000",
+  "errs" : 0,
+  "warnings" : 0,
+  "hints" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0-ballot (3)"
 }
