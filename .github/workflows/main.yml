@@ -49,8 +49,8 @@ jobs:
       - name: install gh-pages
         run: yarn global add gh-pages fsh-sushi
 
-      - name: install jekyll
-        run: gem install jekyll
+      - name: install gems
+        run: bundle install
 
       - name: which jekyll
         run: which jekyll
