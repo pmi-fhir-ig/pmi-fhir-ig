@@ -22,38 +22,51 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Setup Java JDK
-        uses: actions/setup-java@v3.0.0
-        with:
-          distribution: 'adopt'
-          java-version: '11'
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.0.0
-        with:
-          cache: 'npm'
-      - name: Setup Ruby, JRuby and TruffleRuby
-        uses: ruby/setup-ruby@v1.100.0
-        with:
-          ruby-version: 3.1
-          bundler-cache: true
       - name: Cache multiple paths
         uses: actions/cache@v3
         with:
           path: |
             /opt/hostedtoolcache/Ruby/3.1.1
             input-cache
-          key: ${{ runner.os }}-1
+          key: v2-${{ runner.os }}-${{ hashFiles('./_updatePublisher.sh') }}
+          restore-keys: |
+            v2-${{ runner.os }}
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+      - name: Setup Ruby, JRuby and TruffleRuby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.1
+          bundler-cache: true
       - name: install gh-pages
         run: yarn global add gh-pages fsh-sushi
 
-      - name: install jekyll
+      - name: Check for Jekyll
+        id: check_jekyll
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "/opt/hostedtoolcache/Ruby/3.1.1/x64/bin/jekyll"
+      - name: Install jekyll is it does not exists
+        if: steps.check_jekyll.outputs.files_exists == 'false'
         run: gem install jekyll
 
-      - name: which jekyll
+      - name: Find jekyll
         run: which jekyll
 
-      # Runs a set of commands using the runners shell
-      - name: Update Publisher
+      - name: Check for publisher
+        id: check_publisher
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "./input-cache/publisher.jar"
+      - name: Install Publisher if it does not exist
+        if: steps.check_publisher.outputs.files_exists == 'false'
         run: |
           ./_updatePublisher.sh -y -f
       # Runs a set of commands using the runners shell
