@@ -63,7 +63,7 @@ jobs:
       - name: Copy package-list.json
         run: |
           cp package-list.json output
-          ll output
+          ls -la output
       - name: Confirm generate QA
         run: yarn run check:generate
       - name: "Github Pages Deployment"
