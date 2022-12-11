@@ -47,7 +47,13 @@ jobs:
       - name: install gh-pages
         run: yarn global add gh-pages fsh-sushi
 
-       # Runs a set of commands using the runners shell
+      - name: install gems
+        run: gem install jekyll
+
+      - name: which jekyll
+        run: which jekyll
+
+      # Runs a set of commands using the runners shell
       - name: Update Publisher
         run: |
           ./_updatePublisher.sh -y -f
