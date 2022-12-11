@@ -44,24 +44,29 @@ jobs:
             input-cache
           key: v2-${{ runner.os }}-
           restore-keys: |
-            v2-${{ runner.os }}
+            v2-${{ runner.os }}-
       - name: install gh-pages
         run: yarn global add gh-pages fsh-sushi
 
-      - name: Check file existence
+      - name: Check for Jekyll
         id: check_jekyll
         uses: andstor/file-existence-action@v2
         with:
           files: "/opt/hostedtoolcache/Ruby/3.1.1/x64/bin/jekyll"
-      - name: install jekyll is no file exists
+      - name: Install jekyll is it does not exists
         if: steps.check_jekyll.outputs.files_exists == 'false'
         run: gem install jekyll
 
-      - name: which jekyll
+      - name: Find jekyll
         run: which jekyll
 
-      # Runs a set of commands using the runners shell
-      - name: Update Publisher
+      - name: Check for publisher
+        id: check_publisher
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "./input-cache/publisher.jar"
+      - name: Install Publisher if it does not exist
+        if: steps.check_publisher.outputs.files_exists == 'false'
         run: |
           ./_updatePublisher.sh -y -f
       # Runs a set of commands using the runners shell
