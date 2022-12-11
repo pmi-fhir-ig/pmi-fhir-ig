@@ -1,0 +1,33 @@
+{
+  "package-id": "fhir.us.pmi.ig",
+  "canonical": "https://pmi-fhir-ig.github.io/pmi-fhir-ig",
+  "title": "PMI FHIR Implementation Guide",
+  "introduction": "This table provides a list of all the versions of PMI IG that are available.",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "https://pmi-fhir-ig.github.io/pmi-fhir-ig",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "0.1.1",
+      "date": "2020-01-15",
+      "desc": "Official v0.1.1 release",
+      "path": "https://pmi-fhir-ig.github.io/pmi-fhir-ig",
+      "sequence": "Drafts",
+      "fhirversion": "4.0.1",
+      "current": true
+    },
+    {
+      "version": "0.1.0",
+      "date": "2020-09-17",
+      "desc": "Official v0.1.0 release",
+      "path": "https://pmi-fhir-ig.github.io/pmi-fhir-ig",
+      "sequence": "Drafts",
+      "fhirversion": "4.0.1",
+      "current": false
+    }
+  ]
+}
