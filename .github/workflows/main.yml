@@ -34,7 +34,7 @@ jobs:
       - name: Setup Ruby, JRuby and TruffleRuby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1
+          ruby-version: 3.1.1
           bundler-cache: true
       - name: Cache multiple paths
         uses: actions/cache@v3
@@ -42,7 +42,10 @@ jobs:
           path: |
             /opt/hostedtoolcache/Ruby/3.1.1
             input-cache
-          key: ${{ runner.os }}-1
+            vendor
+          key: v2-${{ runner.os }}-1
+          restore-keys: |
+            v2-${{ runner.os }}
       - name: install gh-pages
         run: yarn global add gh-pages fsh-sushi
 
