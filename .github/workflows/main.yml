@@ -22,6 +22,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - name: Cache multiple paths
+        uses: actions/cache@v3
+        with:
+          path: |
+            /opt/hostedtoolcache/Ruby/3.1.1
+            input-cache
+          key: v2-${{ runner.os }}-${{ hashFiles('./_updatePublisher.sh') }}
+          restore-keys: |
+            v2-${{ runner.os }}
       - name: Setup Java JDK
         uses: actions/setup-java@v3
         with:
@@ -36,15 +45,6 @@ jobs:
         with:
           ruby-version: 3.1.1
           bundler-cache: true
-      - name: Cache multiple paths
-        uses: actions/cache@v3
-        with:
-          path: |
-            /opt/hostedtoolcache/Ruby/3.1.1
-            input-cache
-          key: v2-${{ runner.os }}-
-          restore-keys: |
-            v2-${{ runner.os }}-
       - name: install gh-pages
         run: yarn global add gh-pages fsh-sushi
 
