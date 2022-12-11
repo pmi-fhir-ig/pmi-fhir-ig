@@ -3,7 +3,7 @@
 
 err = 0, warn = 0, info = 0
 IG Publisher Version: 1.2.22 Out of date - current version is 1.2.23
-Generated Sat Dec 10 18:40:04 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.1 (canonical = https://pmi-fhir-ig.github.io/pmi-fhir-ig)
+Generated Sun Dec 11 04:47:18 UTC 2022. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.1 (canonical = https://pmi-fhir-ig.github.io/pmi-fhir-ig)
  Build Errors : 0 / 0 / 0
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ImplementationGuide-fhir.us.pmi.ig : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Organization-PMICATIAuthorExample : 0 / 0 / 1
