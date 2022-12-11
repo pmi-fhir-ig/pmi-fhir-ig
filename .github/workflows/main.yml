@@ -40,6 +40,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: |
+            /opt/hostedtoolcache/Ruby/3.1.1
             input-cache
           key: v2-${{ runner.os }}-
           restore-keys: |
@@ -47,7 +48,13 @@ jobs:
       - name: install gh-pages
         run: yarn global add gh-pages fsh-sushi
 
-      - name: install gems
+      - name: Check file existence
+        id: check_jekyll
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "/opt/hostedtoolcache/Ruby/3.1.1/x64/bin/jekyll"
+      - name: install jekyll is no file exists
+        if: steps.check_jekyll.outputs.files_exists == 'false'
         run: gem install jekyll
 
       - name: which jekyll
