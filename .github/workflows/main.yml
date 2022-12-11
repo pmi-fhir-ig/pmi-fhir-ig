@@ -40,22 +40,14 @@ jobs:
         uses: actions/cache@v3
         with:
           path: |
-            /opt/hostedtoolcache/Ruby/3.1.1
             input-cache
-            vendor
-          key: v2-${{ runner.os }}-1
+          key: v2-${{ runner.os }}-
           restore-keys: |
             v2-${{ runner.os }}
       - name: install gh-pages
         run: yarn global add gh-pages fsh-sushi
 
-      - name: install gems
-        run: bundle install
-
-      - name: which jekyll
-        run: which jekyll
-
-      # Runs a set of commands using the runners shell
+       # Runs a set of commands using the runners shell
       - name: Update Publisher
         run: |
           ./_updatePublisher.sh -y -f
