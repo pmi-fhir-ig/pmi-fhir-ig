@@ -9,6 +9,7 @@
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "https://pmi-fhir-ig.github.io/pmi-fhir-ig",
       "status": "ci-build",
+      "date": "n/a",
       "current": true
     },
     {
