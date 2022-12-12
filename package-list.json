@@ -13,9 +13,9 @@
       "current": true
     },
     {
-      "version": "1.0.0-beta-1",
+      "version": "1.0.0-beta-3",
       "date": "2020-01-15",
-      "desc": "v1.0.0-beta-1 release",
+      "desc": "v1.0.0-beta-3 release",
       "path": "https://pmi-fhir-ig.github.io/pmi-fhir-ig",
       "status": "draft",
       "sequence": "Drafts",
