@@ -18,8 +18,7 @@
       "path": "https://pmi-fhir-ig.github.io/pmi-fhir-ig",
       "status": "draft",
       "sequence": "Drafts",
-      "fhirversion": "4.0.1",
-      "current": true
+      "fhirversion": "4.0.1"
     }
   ]
 }
