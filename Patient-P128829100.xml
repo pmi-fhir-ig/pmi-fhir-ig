@@ -48,6 +48,7 @@
     <family value="Bond"/>
     <given value="James"/>
     <given value="Emily"/>
+    <suffix value="III"/>
   </name>
   <name>
     <use value="nickname"/>

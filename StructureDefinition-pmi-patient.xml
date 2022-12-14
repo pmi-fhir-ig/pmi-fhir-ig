@@ -37,6 +37,8 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pmi-patient-definitions.html#Patient.telecom">telecom</a><a name="Patient.telecom"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A contact detail for the individual</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-pmi-patient-definitions.html#Patient.telecom.extension">extension</a><a name="Patient.telecom.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck114.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-pmi-patient-definitions.html#Patient.telecom.extension:verified" title="Extension URL = https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified">verified</a><a name="Patient.telecom.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">PMI Verified</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-pmi-verified.html">https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pmi-patient-definitions.html#Patient.telecom.system">system</a><a name="Patient.telecom.system"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">phone | fax | email | pager | url | sms | other</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pmi-patient-definitions.html#Patient.telecom.value">value</a><a name="Patient.telecom.value"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The actual contact point details</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="text-decoration:line-through">period</span><a name="Patient.telecom.period"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="text-decoration:line-through">gender</span><a name="Patient.gender"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-pmi-patient-definitions.html#Patient.birthDate">birthDate</a><a name="Patient.birthDate"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The date of birth for the individual</span></td></tr>
@@ -85,7 +87,7 @@
   <name value="PMIPatient"/>
   <title value="PMI Patient"/>
   <status value="active"/>
-  <date value="2022-12-11T04:47:01+00:00"/>
+  <date value="2022-12-14T04:26:55+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -251,7 +253,7 @@
       <isSummary value="true"/>
       <mapping>
         <identity value="pmi-patient-data-mapping"/>
-        <map value="Participant Identified"/>
+        <map value="user -&gt; external_id"/>
       </mapping>
     </element>
     <element id="Patient.meta">
@@ -430,6 +432,10 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="#participant-provenance or #cati-provenance depending on who made the update"/>
+      </mapping>
     </element>
     <element id="Patient.meta.profile">
       <path value="Patient.meta.profile"/>
@@ -664,6 +670,10 @@
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="instance of PMIProvenance"/>
       </mapping>
     </element>
     <element id="Patient.contained:provenance">
@@ -1473,6 +1483,10 @@
         <identity value="servd"/>
         <map value="./Value"/>
       </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; ssn"/>
+      </mapping>
     </element>
     <element id="Patient.identifier:SSN.period">
       <path value="Patient.identifier.period"/>
@@ -1875,6 +1889,10 @@
         <identity value="servd"/>
         <map value="./FamilyName"/>
       </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; last_name"/>
+      </mapping>
     </element>
     <element id="Patient.name:official.given">
       <path value="Patient.name.given"/>
@@ -1916,6 +1934,10 @@
       <mapping>
         <identity value="servd"/>
         <map value="./GivenNames"/>
+      </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; first_name split by space into an array and user -&gt; middle_initial"/>
       </mapping>
     </element>
     <element id="Patient.name:official.prefix">
@@ -2307,6 +2329,10 @@
         <identity value="servd"/>
         <map value="./GivenNames"/>
       </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; preferred_name"/>
+      </mapping>
     </element>
     <element id="Patient.name:preferred.prefix">
       <path value="Patient.name.prefix"/>
@@ -2583,6 +2609,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
@@ -2604,6 +2631,10 @@
       <mapping>
         <identity value="servd"/>
         <map value="./ContactPointType"/>
+      </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="#phone, #email"/>
       </mapping>
     </element>
     <element id="Patient.telecom.value">
@@ -2630,6 +2661,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -2643,6 +2675,10 @@
       <mapping>
         <identity value="servd"/>
         <map value="./Value"/>
+      </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; verified_primary_phone_number, user -&gt; email, user -&gt; alternate_email"/>
       </mapping>
     </element>
     <element id="Patient.telecom.use">
@@ -2940,6 +2976,10 @@
       <mapping>
         <identity value="cda"/>
         <map value=".addr"/>
+      </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user_address"/>
       </mapping>
     </element>
     <element id="Patient.address.id">
@@ -3680,6 +3720,10 @@
         <identity value="cda"/>
         <map value="n/a"/>
       </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user_secondary_contact"/>
+      </mapping>
     </element>
     <element id="Patient.contact.id">
       <path value="Patient.contact.id"/>
@@ -4116,6 +4160,10 @@
       <mapping>
         <identity value="cda"/>
         <map value="patient.languageCommunication"/>
+      </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user_preference -&gt; locale"/>
       </mapping>
     </element>
     <element id="Patient.communication.id">
@@ -4629,7 +4677,7 @@
       <short value="Participant ID e.g. P12345678"/>
       <mapping>
         <identity value="pmi-patient-data-mapping"/>
-        <map value="Participant Identified"/>
+        <map value="user -&gt; external_id"/>
       </mapping>
     </element>
     <element id="Patient.meta.source">
@@ -4637,6 +4685,10 @@
       <short value="Reference to the contained Provenance"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="#participant-provenance or #cati-provenance depending on who made the update"/>
+      </mapping>
     </element>
     <element id="Patient.contained">
       <path value="Patient.contained"/>
@@ -4655,6 +4707,10 @@
         <code value="Organization"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="instance of PMIProvenance"/>
+      </mapping>
     </element>
     <element id="Patient.contained:provenance">
       <path value="Patient.contained"/>
@@ -4724,6 +4780,14 @@
     <element id="Patient.identifier:SSN.value">
       <path value="Patient.identifier.value"/>
       <short value="Social Security Number"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; ssn"/>
+      </mapping>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; ssn"/>
+      </mapping>
     </element>
     <element id="Patient.active">
       <path value="Patient.active"/>
@@ -4757,11 +4821,19 @@
       <path value="Patient.name.family"/>
       <short value="Last name of the participant"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; last_name"/>
+      </mapping>
     </element>
     <element id="Patient.name:official.given">
       <path value="Patient.name.given"/>
       <short value="First and Middle name (if any) provided as array of strings"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; first_name split by space into an array and user -&gt; middle_initial"/>
+      </mapping>
     </element>
     <element id="Patient.name:official.suffix">
       <path value="Patient.name.suffix"/>
@@ -4783,6 +4855,10 @@
       <path value="Patient.name.given"/>
       <short value="Nick name for the participant"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; preferred_name"/>
+      </mapping>
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom"/>
@@ -4802,6 +4878,22 @@
         <profile value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified"/>
       </type>
       <mustSupport value="true"/>
+    </element>
+    <element id="Patient.telecom.system">
+      <path value="Patient.telecom.system"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="#phone, #email"/>
+      </mapping>
+    </element>
+    <element id="Patient.telecom.value">
+      <path value="Patient.telecom.value"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user -&gt; verified_primary_phone_number, user -&gt; email, user -&gt; alternate_email"/>
+      </mapping>
     </element>
     <element id="Patient.telecom.period">
       <path value="Patient.telecom.period"/>
@@ -4823,6 +4915,10 @@
     <element id="Patient.address">
       <path value="Patient.address"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user_address"/>
+      </mapping>
     </element>
     <element id="Patient.address.extension">
       <path value="Patient.address.extension"/>
@@ -4890,6 +4986,10 @@
       <path value="Patient.contact"/>
       <short value="Secondary Contacts for the Patient"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user_secondary_contact"/>
+      </mapping>
     </element>
     <element id="Patient.contact.relationship">
       <path value="Patient.contact.relationship"/>
@@ -4931,6 +5031,10 @@
       <path value="Patient.communication"/>
       <max value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="pmi-patient-data-mapping"/>
+        <map value="user_preference -&gt; locale"/>
+      </mapping>
     </element>
     <element id="Patient.communication.language">
       <path value="Patient.communication.language"/>

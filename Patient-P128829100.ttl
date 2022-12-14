@@ -75,6 +75,10 @@
      ], [
        fhir:value "Emily";
        fhir:index 1
+     ];
+     fhir:HumanName.suffix [
+       fhir:value "III";
+       fhir:index 0
      ]
   ], [
      fhir:index 1;

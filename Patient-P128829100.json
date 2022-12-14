@@ -46,7 +46,8 @@
     "use" : "official",
     "family" : "Bond",
     "given" : ["James",
-    "Emily"]
+    "Emily"],
+    "suffix" : ["III"]
   },
   {
     "use" : "nickname",
