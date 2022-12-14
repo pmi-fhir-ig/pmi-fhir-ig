@@ -52,6 +52,8 @@ Description: "Participant profile"
 * telecom MS
   * period 0..0
   * extension 0..1
+  * system MS
+  * value MS
   * extension contains
     PMIVerified named verified 0..1 MS
 * birthDate MS
