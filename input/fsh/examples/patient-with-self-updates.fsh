@@ -16,6 +16,7 @@ Description: "PMI Patient profile information which was updated by the participa
   * given[0] = "James"
   * given[+] = "Emily"
   * family = "Bond"
+  * suffix = "III"
 * name[preferred]
   * given[0] = "Jim"
 * telecom[0]
