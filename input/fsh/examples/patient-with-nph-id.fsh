@@ -9,7 +9,7 @@ Description: "PMI Patient profile information which was updated by the participa
 * id = "P128829102"
 * identifier[NPH]
   * use = #official
-  * type = PMIIdentifierTypeCS#NPH
+  * type = PMIIdentifierTypeCS#NPH-1000
   * value = "NPHS578448930"
 * name[official]
   * given[0] = "James"
