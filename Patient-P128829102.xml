@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="P128829102"/>
+  <meta>
+    <source value="#PMIParticipantProvenanceExample"/>
+    <profile value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>James Emily Bond (OFFICIAL)</b> (no stated gender), DoB Unknown ( NPH Program Identifier: NPHS578448930 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Alternate names (see the one above)">Alt. Name:</td><td colspan="3">Jim (NICKNAME)</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href="mailto:patient@example.org">patient@example.org</a></li><li>4114 Legato Rd Fairafx VA 22033 US (HOME)</li></ul></td></tr></table></div>
+  </text>
+  <contained>
+    <Provenance>
+      <id value="PMIParticipantProvenanceExample"/>
+      <meta>
+        <profile value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance"/>
+      </meta>
+      <target>
+        <reference value="Patient/P128829100"/>
+      </target>
+      <recorded value="2015-02-07T13:28:17.239+02:00"/>
+      <agent>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+            <code value="author"/>
+          </coding>
+        </type>
+        <who>
+          <reference value="Patient/P128829100"/>
+        </who>
+      </agent>
+    </Provenance>
+  </contained>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS"/>
+        <code value="NPH"/>
+      </coding>
+    </type>
+    <value value="NPHS578448930"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Bond"/>
+    <given value="James"/>
+    <given value="Emily"/>
+    <suffix value="III"/>
+  </name>
+  <name>
+    <use value="nickname"/>
+    <given value="Jim"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="2405553920"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <extension url="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified">
+      <valueBoolean value="true"/>
+    </extension>
+    <system value="phone"/>
+    <value value="2405553920"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <extension url="https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified">
+      <valueBoolean value="true"/>
+    </extension>
+    <system value="email"/>
+    <value value="patient@example.org"/>
+    <use value="home"/>
+  </telecom>
+  <address>
+    <use value="home"/>
+    <type value="physical"/>
+    <line value="4114 Legato Rd"/>
+    <city value="Fairafx"/>
+    <state value="VA"/>
+    <postalCode value="22033"/>
+    <country value="US"/>
+  </address>
+</Patient>

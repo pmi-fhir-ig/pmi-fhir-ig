@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9cd4f278-dec2-4782-80b3-ae4795a4bb9e-9",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9cd4f278-dec2-4782-80b3-ae4795a4bb9e-9",
+  "id" : "c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-9",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-9",
   "name" : "IntersectionPMIVerifiedAndPMIVerified",
   "title" : "Intersection of PMI Verified And PMI Verified",
   "status" : "active",
-  "date" : "2022-12-14T04:27:02+00:00",
+  "date" : "2023-01-09T17:01:05+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Extension",

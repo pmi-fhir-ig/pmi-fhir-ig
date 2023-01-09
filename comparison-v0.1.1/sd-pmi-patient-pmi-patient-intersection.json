@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9cd4f278-dec2-4782-80b3-ae4795a4bb9e-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9cd4f278-dec2-4782-80b3-ae4795a4bb9e-2",
-  "name" : "UnionPMIPatientAndPMIPatient",
-  "title" : "Union of PMI Patient And PMI Patient",
+  "id" : "c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-3",
+  "name" : "IntersectionPMIPatientAndPMIPatient",
+  "title" : "Intersection of PMI Patient And PMI Patient",
   "status" : "active",
-  "date" : "2022-12-14T04:27:02+00:00",
+  "date" : "2023-01-09T17:01:05+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Patient",
@@ -341,6 +341,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "Tags"
+        }],
         "strength" : "example",
         "description" : "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\".",
         "valueSet" : "http://hl7.org/fhir/ValueSet/common-tags"
@@ -390,6 +394,18 @@
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+          "valueCanonical" : "http://hl7.org/fhir/ValueSet/all-languages"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "Language"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+          "valueBoolean" : true
+        }],
         "strength" : "preferred",
         "description" : "A human language.",
         "valueSet" : "http://hl7.org/fhir/ValueSet/languages"

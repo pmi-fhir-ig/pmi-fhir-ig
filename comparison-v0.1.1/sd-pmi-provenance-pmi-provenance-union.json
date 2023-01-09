@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9cd4f278-dec2-4782-80b3-ae4795a4bb9e-6",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9cd4f278-dec2-4782-80b3-ae4795a4bb9e-6",
-  "name" : "IntersectionPMIProvenanceAndPMIProvenance",
-  "title" : "Intersection of PMI Provenance And PMI Provenance",
+  "id" : "c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-5",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-5",
+  "name" : "UnionPMIProvenanceAndPMIProvenance",
+  "title" : "Union of PMI Provenance And PMI Provenance",
   "status" : "active",
-  "date" : "2022-12-14T04:27:02+00:00",
+  "date" : "2023-01-09T17:01:05+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Provenance",
@@ -168,18 +168,6 @@
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-          "valueCanonical" : "http://hl7.org/fhir/ValueSet/all-languages"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
-        }],
         "strength" : "preferred",
         "description" : "A human language.",
         "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
@@ -1149,10 +1137,6 @@
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "ProvenanceAgentRole"
-        }],
         "strength" : "example",
         "description" : "The role that a provenance agent played with respect to the activity.",
         "valueSet" : "http://hl7.org/fhir/ValueSet/security-role-type"

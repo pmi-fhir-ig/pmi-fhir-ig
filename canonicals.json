@@ -1,5 +1,12 @@
 [
   {
+    "id" : "PMIIdentifierTypeCS",
+    "type" : "CodeSystem",
+    "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS",
+    "version" : "0.1.1",
+    "name" : "PMIIdentifierTypeCS"
+  },
+  {
     "id" : "fhir.us.pmi.ig",
     "type" : "ImplementationGuide",
     "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig",
