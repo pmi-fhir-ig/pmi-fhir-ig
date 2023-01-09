@@ -1,16 +1,16 @@
-Instance: PMIPatientWithNPHIDExample
+Instance: PMIPatientWithNPHIDForNPHExample
 InstanceOf: PMIPatient
 Usage: #example
-Title: "PMI Patient with NPH ID"
-Description: "PMI Patient profile information which was updated by the participant"
+Title: "PMI Patient with identifier for NPH Study"
+Description: "PMI Patient profile information which has been assigned an ancillary study ID for NPH"
 * meta.profile = Canonical(pmi-patient)
-* meta.source = "#PMIParticipantProvenanceExample"
-* contained[provenance] = PMIParticipantProvenanceExample
-* id = "P128829102"
+* meta.source = "#PMIParticipantProvenanceForNPHExample"
+* contained[provenance] = PMIParticipantProvenanceForNPHExample
+* id = "1000578448930"
 * identifier[NPH]
   * use = #official
-  * type = PMIIdentifierTypeCS#NPH
-  * value = "NPHS578448930"
+  * type = PMIIdentifierTypeCS#NPH-1000
+  * value = "1000578448930"
 * name[official]
   * given[0] = "James"
   * given[+] = "Emily"

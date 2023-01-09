@@ -24,6 +24,7 @@ Description: "Participant profile"
   * ^isModifier = false
   * assigner 0..0
   * period 0..0
+  * type from PMIIdentifierTypeVS
 * identifier contains SSN 0..1 MS
 * identifier[SSN]
   * ^short = "Social Security Number for the patient"
@@ -33,7 +34,7 @@ Description: "Participant profile"
   * value ^short = "Social Security Number"
 * identifier contains NPH 0..1 MS
 * identifier[NPH]
-  * type = PMIIdentifierTypeCS#NPH
+  * type = PMIIdentifierTypeCS#NPH-1000
   * ^short = "NPH Program Identifier"
   * value ^short = "NPH Program ID"
 * active 0..0
