@@ -1,16 +1,16 @@
-Instance: PMIPatientWithSelfUpdatesExample
+Instance: PMIPatientWithNPHIDExample
 InstanceOf: PMIPatient
 Usage: #example
-Title: "PMI Patient with Self Updates"
+Title: "PMI Patient with NPH ID"
 Description: "PMI Patient profile information which was updated by the participant"
 * meta.profile = Canonical(pmi-patient)
 * meta.source = "#PMIParticipantProvenanceExample"
 * contained[provenance] = PMIParticipantProvenanceExample
-* id = "P128829100"
-* identifier[SSN]
+* id = "P128829102"
+* identifier[NPH]
   * use = #official
-  * system = "http://hl7.org/fhir/sid/us-ssn"
-  * value = "578448930"
+  * type = PMIIdentifierTypeCS#NPH
+  * value = "NPHS578448930"
 * name[official]
   * given[0] = "James"
   * given[+] = "Emily"
@@ -32,7 +32,6 @@ Description: "PMI Patient profile information which was updated by the participa
   * system = http://hl7.org/fhir/contact-point-system#email
   * value = "patient@example.org"
   * use = http://hl7.org/fhir/contact-point-use#home
-* birthDate = "1905-08-23"
 * address
   * type = #physical
   * line[0] = "4114 Legato Rd"
@@ -40,22 +39,3 @@ Description: "PMI Patient profile information which was updated by the participa
   * state = "VA"
   * postalCode = "22033"
   * country = #US
-* communication[0]
-  * preferred = true
-  * language = urn:ietf:bcp:47#es
-* contact[0]
-  * name
-    * use = #nickname
-    * given[0] = "Moneypenny"
-  * telecom
-    * system = http://hl7.org/fhir/contact-point-system#phone
-    * value = "2405553920"
-    * use = http://hl7.org/fhir/contact-point-use#home
-  * address
-    * type = #physical
-    * line[0] = "4114 Legato Rd"
-    * city = "Fairafx"
-    * state = "VA"
-    * postalCode = "22033"
-    * country = #US
-
