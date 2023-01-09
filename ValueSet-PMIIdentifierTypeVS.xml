@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PMIIdentifierTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0203.html"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a> where concept  is-a  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0203.html#v2-0203-SS">SS</a></li><li>Include all codes defined in <a href="CodeSystem-PMIIdentifierTypeCS.html"><code>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS</code></a></li></ul></div>
+  </text>
+  <url value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/ValueSet/PMIIdentifierTypeVS"/>
+  <version value="0.1.1"/>
+  <name value="PMIIdentifierTypeVS"/>
+  <title value="PMI Identifier Type ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-09T19:01:04+00:00"/>
+  <publisher value="Vibrent Health"/>
+  <contact>
+    <name value="Vibrent Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vibrenthealth.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="anaik@vibrenthealth.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Addy Naik"/>
+    <telecom>
+      <system value="email"/>
+      <value value="anaik@vibrenthealth.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Daniel Uribe"/>
+    <telecom>
+      <system value="email"/>
+      <value value="duribe@vibrenthealth.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Identifier types for the PMI Participant"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="SS"/>
+      </filter>
+    </include>
+    <include>
+      <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS"/>
+    </include>
+  </compose>
+</ValueSet>

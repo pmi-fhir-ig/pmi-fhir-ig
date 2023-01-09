@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "PMIIdentifierTypeCS"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">NPH<a name=\"PMIIdentifierTypeCS-NPH\"> </a></td><td>NPH Program Identifier</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">NPH-1000<a name=\"PMIIdentifierTypeCS-NPH-1000\"> </a></td><td>NPH Program Identifier for study 1000</td></tr></table></div>"
   ]; # 
   fhir:CodeSystem.url [ fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS"]; # 
   fhir:CodeSystem.version [ fhir:value "0.1.1"]; # 
@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "PMI Identifier Type Code System"]; # 
   fhir:CodeSystem.status [ fhir:value "active"]; # 
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-01-09T17:00:58+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-01-09T19:01:04+00:00"^^xsd:dateTime]; # 
   fhir:CodeSystem.publisher [ fhir:value "Vibrent Health"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -57,8 +57,8 @@
   fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "NPH" ];
-     fhir:CodeSystem.concept.display [ fhir:value "NPH Program Identifier" ]
+     fhir:CodeSystem.concept.code [ fhir:value "NPH-1000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "NPH Program Identifier for study 1000" ]
   ] . # 
 
 # - ontology header ------------------------------------------------------------

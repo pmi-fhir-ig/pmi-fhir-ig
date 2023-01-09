@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="PMIIdentifierTypeCS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">NPH<a name="PMIIdentifierTypeCS-NPH"> </a></td><td>NPH Program Identifier</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">NPH-1000<a name="PMIIdentifierTypeCS-NPH-1000"> </a></td><td>NPH Program Identifier for study 1000</td></tr></table></div>
   </text>
   <url value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS"/>
   <version value="0.1.1"/>
@@ -11,7 +11,7 @@
   <title value="PMI Identifier Type Code System"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-01-09T17:00:58+00:00"/>
+  <date value="2023-01-09T19:01:04+00:00"/>
   <publisher value="Vibrent Health"/>
   <contact>
     <name value="Vibrent Health"/>
@@ -45,7 +45,7 @@
   <content value="complete"/>
   <count value="1"/>
   <concept>
-    <code value="NPH"/>
-    <display value="NPH Program Identifier"/>
+    <code value="NPH-1000"/>
+    <display value="NPH Program Identifier for study 1000"/>
   </concept>
 </CodeSystem>

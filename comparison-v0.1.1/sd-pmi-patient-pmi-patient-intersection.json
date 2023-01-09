@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-3",
+  "id" : "66c0d367-8fec-4eb6-9760-cd3015f483d0-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/66c0d367-8fec-4eb6-9760-cd3015f483d0-3",
   "name" : "IntersectionPMIPatientAndPMIPatient",
   "title" : "Intersection of PMI Patient And PMI Patient",
   "status" : "active",
-  "date" : "2023-01-09T17:01:05+00:00",
+  "date" : "2023-01-09T19:01:11+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Patient",
@@ -697,9 +697,9 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "extensible",
+        "strength" : "required",
         "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-type"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/66c0d367-8fec-4eb6-9760-cd3015f483d0-6"
       },
       "mapping" : [{
         "identity" : "v2",

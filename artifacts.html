@@ -151,10 +151,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Terminology: Code Systems</a>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -214,6 +217,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-PMIIdentifierTypeVS.html"
+                     title="ValueSet/PMIIdentifierTypeVS">PMI Identifier Type ValueSet</a>
+               </td>
+               <td>
+<p>Identifier types for the PMI Participant</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
@@ -234,7 +258,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
@@ -245,6 +269,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="Patient-1000578448930.html" title="Patient/1000578448930">PMI Patient with identifier for NPH Study</a>
+               </td>
+               <td>
+<p>PMI Patient profile information which has been assigned an ancillary study ID for NPH</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Patient-P128829100.html" title="Patient/P128829100">PMI Patient with Self Updates</a>
                </td>
                <td>
@@ -253,10 +285,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-P128829102.html" title="Patient/P128829102">PMI Patient with NPH ID</a>
+                  <a href="Patient-P128829102.html" title="Patient/P128829102">PMI Patient with NPH ID sent to DRC</a>
                </td>
                <td>
-<p>PMI Patient profile information which was updated by the participant</p>
+<p>PMI Patient ID Mapping for ancillary study sent to DRC</p>
 </td>
             </tr>
             <tr>
@@ -294,6 +326,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>PMI Participant Provenance example to be included in the participants patient object</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Provenance-PMIParticipantProvenanceForNPHExample.html"
+                     title="Provenance/PMIParticipantProvenanceForNPHExample">PMI Participant Provenance for Update</a>
+               </td>
+               <td>
+<p>PMI Participant Provenance example to be included in the participants patient object</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -321,7 +362,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://vibrenthealth.com">Vibrent Health</a>.  Package fhir.us.pmi.ig#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 9, 2023 17:00+0000">2023-01-09</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://vibrenthealth.com">Vibrent Health</a>.  Package fhir.us.pmi.ig#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 9, 2023 19:01+0000">2023-01-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

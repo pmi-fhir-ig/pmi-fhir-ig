@@ -3,29 +3,35 @@
 
 err = 0, warn = 0, info = 0
 IG Publisher Version: 1.2.22 Out of date - current version is 1.2.26
-Generated Mon Jan 09 17:01:26 UTC 2023. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.1 (canonical = https://pmi-fhir-ig.github.io/pmi-fhir-ig)
+Generated Mon Jan 09 19:01:36 UTC 2023. FHIR version 4.0.1 for fhir.us.pmi.ig#0.1.1 (canonical = https://pmi-fhir-ig.github.io/pmi-fhir-ig)
  Build Errors : 0 / 0 / 0
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/CodeSystem-PMIIdentifierTypeCS : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ImplementationGuide-fhir.us.pmi.ig : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Organization-PMICATIAuthorExample : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Patient-1000578448930 : 0 / 0 / 3
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Patient-P128829100 : 0 / 0 / 3
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Patient-P128829102 : 0 / 0 / 3
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Patient-P128829103 : 0 / 0 / 4
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Provenance-PMICATIProvenanceExample : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Provenance-PMIParticipantProvenanceExample : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/Provenance-PMIParticipantProvenanceForNPHExample : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-patient : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-provenance : 0 / 0 / 1
  /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/StructureDefinition-pmi-verified : 0 / 0 / 1
+ /home/runner/work/pmi-fhir-ig/pmi-fhir-ig/fsh-generated/resources/ValueSet-PMIIdentifierTypeVS : 0 / 0 / 1
 </table>
 == n/a ==
 == fsh-generated/resources/CodeSystem-PMIIdentifierTypeCS.json ==
 == fsh-generated/resources/ImplementationGuide-fhir.us.pmi.ig.json ==
 == fsh-generated/resources/Organization-PMICATIAuthorExample.json ==
+== fsh-generated/resources/Patient-1000578448930.json ==
 == fsh-generated/resources/Patient-P128829100.json ==
 == fsh-generated/resources/Patient-P128829102.json ==
 == fsh-generated/resources/Patient-P128829103.json ==
 == fsh-generated/resources/Provenance-PMICATIProvenanceExample.json ==
 == fsh-generated/resources/Provenance-PMIParticipantProvenanceExample.json ==
+== fsh-generated/resources/Provenance-PMIParticipantProvenanceForNPHExample.json ==
 == fsh-generated/resources/StructureDefinition-pmi-patient.json ==
 == fsh-generated/resources/StructureDefinition-pmi-provenance.json ==
 == fsh-generated/resources/StructureDefinition-pmi-verified.json ==
+== fsh-generated/resources/ValueSet-PMIIdentifierTypeVS.json ==

@@ -9,7 +9,7 @@
   "version" : "0.1.1",
   "name" : "PMICoreIG",
   "status" : "active",
-  "date" : "2023-01-09T17:00:58+00:00",
+  "date" : "2023-01-09T19:01:04+00:00",
   "publisher" : "Vibrent Health",
   "contact" : [{
     "name" : "Vibrent Health",
@@ -685,6 +685,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PMIIdentifierTypeVS"
+      },
+      "name" : "PMI Identifier Type ValueSet",
+      "description" : "Identifier types for the PMI Participant",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -693,6 +705,18 @@
       "name" : "PMI Identifier Type Code System",
       "description" : "Identifier types for the PMI Participant",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/1000578448930"
+      },
+      "name" : "PMI Patient with identifier for NPH Study",
+      "description" : "PMI Patient profile information which has been assigned an ancillary study ID for NPH",
+      "exampleCanonical" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"
     },
     {
       "extension" : [{
@@ -714,8 +738,8 @@
       "reference" : {
         "reference" : "Patient/P128829102"
       },
-      "name" : "PMI Patient with NPH ID",
-      "description" : "PMI Patient profile information which was updated by the participant",
+      "name" : "PMI Patient with NPH ID sent to DRC",
+      "description" : "PMI Patient ID Mapping for ancillary study sent to DRC",
       "exampleCanonical" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient"
     },
     {
@@ -761,6 +785,18 @@
       }],
       "reference" : {
         "reference" : "Provenance/PMIParticipantProvenanceExample"
+      },
+      "name" : "PMI Participant Provenance for Update",
+      "description" : "PMI Participant Provenance example to be included in the participants patient object",
+      "exampleCanonical" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/PMIParticipantProvenanceForNPHExample"
       },
       "name" : "PMI Participant Provenance for Update",
       "description" : "PMI Participant Provenance example to be included in the participants patient object",

@@ -1,0 +1,177 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "66c0d367-8fec-4eb6-9760-cd3015f483d0-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/66c0d367-8fec-4eb6-9760-cd3015f483d0-5",
+  "name" : "UnionIdentifier Type CodesAndPMIIdentifierTypeVS",
+  "title" : "Union of IdentifierType And PMI Identifier Type ValueSet",
+  "status" : "active",
+  "date" : "2023-01-09T19:01:11+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "DL"
+      },
+      {
+        "code" : "PPN"
+      },
+      {
+        "code" : "BRN"
+      },
+      {
+        "code" : "MR"
+      },
+      {
+        "code" : "MCN"
+      },
+      {
+        "code" : "EN"
+      },
+      {
+        "code" : "TAX"
+      },
+      {
+        "code" : "NIIP"
+      },
+      {
+        "code" : "PRN"
+      },
+      {
+        "code" : "MD"
+      },
+      {
+        "code" : "DR"
+      },
+      {
+        "code" : "ACSN"
+      },
+      {
+        "code" : "UDI"
+      },
+      {
+        "code" : "SNO"
+      },
+      {
+        "code" : "SB"
+      },
+      {
+        "code" : "PLAC"
+      },
+      {
+        "code" : "FILL"
+      },
+      {
+        "code" : "JHN"
+      }],
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "SS"
+      }]
+    },
+    {
+      "system" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS"
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "DL",
+      "display" : "Driver's license number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "PPN",
+      "display" : "Passport number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "BRN",
+      "display" : "Breed Registry Number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "MR",
+      "display" : "Medical record number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "MCN",
+      "display" : "Microchip Number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "EN",
+      "display" : "Employer number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "TAX",
+      "display" : "Tax ID number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "NIIP",
+      "display" : "National Insurance Payor Identifier (Payor)"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "PRN",
+      "display" : "Provider number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "MD",
+      "display" : "Medical License number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "DR",
+      "display" : "Donor Registration Number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "ACSN",
+      "display" : "Accession ID"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "UDI",
+      "display" : "Universal Device Identifier"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "SNO",
+      "display" : "Serial Number"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "SB",
+      "display" : "Social Beneficiary Identifier"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "PLAC",
+      "display" : "Placer Identifier"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "FILL",
+      "display" : "Filler Identifier"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "JHN",
+      "display" : "Jurisdictional health number (Canada)"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "SS",
+      "display" : "Social Security number"
+    },
+    {
+      "system" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS",
+      "code" : "NPH-1000",
+      "display" : "NPH Program Identifier for study 1000"
+    }]
+  }
+}

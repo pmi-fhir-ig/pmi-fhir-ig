@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FHIR.US.PMI.IG\PMI Patient with NPH ID - JSON Representation - FHIR v4.0.1</title>
+    <title>FHIR.US.PMI.IG\PMI Patient with NPH ID sent to DRC - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.6"}
-    h3,h4,h5,h6{--heading-prefix:"3.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.8"}
+    h3,h4,h5,h6{--heading-prefix:"3.8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -115,7 +115,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PMI Patient with NPH ID</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PMI Patient with NPH ID sent to DRC</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -168,7 +168,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: PMI Patient with NPH ID - JSON Representation</h2>
+<h2 id="root">: PMI Patient with NPH ID sent to DRC - JSON Representation</h2>
   <table class="colsi">
     <tr>
 
@@ -202,7 +202,7 @@
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;James Emily Bond (OFFICIAL)&lt;/b&gt; (no stated gender), DoB Unknown ( NPH Program Identifier: NPHS578448930 (use: OFFICIAL))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Alternate names (see the one above)\&quot;&gt;Alt. Name:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Jim (NICKNAME)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Details:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;ph: 2405553920(HOME)&lt;/li&gt;&lt;li&gt;ph: 2405553920(HOME)&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;mailto:patient@example.org\&quot;&gt;patient@example.org&lt;/a&gt;&lt;/li&gt;&lt;li&gt;4114 Legato Rd Fairafx VA 22033 US (HOME)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;Anonymous Patient&lt;/b&gt; (no stated gender), DoB Unknown ( NPH Program Identifier for study 1000: 1000578448930 (use: OFFICIAL))&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance">contained</a>" : [
     {
@@ -243,72 +243,11 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NPH"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NPH-1000"
           }
         ]
       },
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "NPHS578448930"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "official",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Bond",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-        "James",
-        "Emily"
-      ],
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.suffix">suffix</a>" : [
-        "III"
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "nickname",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-        "Jim"
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "2405553920",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "home"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.extension">extension</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified",
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
-        }
-      ],
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "2405553920",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "home"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.extension">extension</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-verified",
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
-        }
-      ],
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "patient@example.org",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "home"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a>" : "home",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a>" : "physical",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
-        "4114 Legato Rd"
-      ],
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Fairafx",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "VA",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "22033",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a>" : "US"
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "1000578448930"
     }
   ]
 }</code></pre>
@@ -341,7 +280,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://vibrenthealth.com">Vibrent Health</a>.  Package fhir.us.pmi.ig#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 9, 2023 17:00+0000">2023-01-09</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://vibrenthealth.com">Vibrent Health</a>.  Package fhir.us.pmi.ig#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 9, 2023 19:01+0000">2023-01-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

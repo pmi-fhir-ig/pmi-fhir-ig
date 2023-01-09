@@ -1,9 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8e636e7b-7284-4f3e-993c-d6e0861d5b4c"/>
+  <id value="12b8e84a-6420-4a73-a70b-ce455bdc264a"/>
   <meta>
-    <lastUpdated value="2023-01-09T17:00:58.530+00:00"/>
+    <lastUpdated value="2023-01-09T19:01:04.442+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/ValueSet/PMIIdentifierTypeVS"/>
+    <resource>
+      <ValueSet>
+        <id value="PMIIdentifierTypeVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-PMIIdentifierTypeCS.html">PMI Identifier Type Code System v0.1.1 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0203.html">identifierType v2.9.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0203-SS"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0203.html#v2-0203-SS">SS</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0203</td>
+                <td>Social Security number</td>
+                <td>
+                  <div>
+                    <p>Social Security number</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-fhir-ig.github.io-pmi-fhir-ig-CodeSystem-PMIIdentifierTypeCS-NPH-1000"> </a>  
+                  <a href="CodeSystem-PMIIdentifierTypeCS.html#PMIIdentifierTypeCS-NPH-1000">NPH-1000</a>
+                </td>
+                <td>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS</td>
+                <td>NPH Program Identifier for study 1000</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/ValueSet/PMIIdentifierTypeVS"/>
+        <version value="0.1.1"/>
+        <name value="PMIIdentifierTypeVS"/>
+        <title value="PMI Identifier Type ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-01-09T19:01:04+00:00"/>
+        <publisher value="Vibrent Health"/>
+        <contact>
+          <name value="Vibrent Health"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://vibrenthealth.com"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="anaik@vibrenthealth.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Addy Naik"/>
+          <telecom>
+            <system value="email"/>
+            <value value="anaik@vibrenthealth.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Daniel Uribe"/>
+          <telecom>
+            <system value="email"/>
+            <value value="duribe@vibrenthealth.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Identifier types for the PMI Participant"/>
+        <expansion>
+          <identifier value="urn:uuid:53a6c64d-524e-4542-8cba-9f7e347f3684"/>
+          <timestamp value="2023-01-09T19:01:19+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0203|2.9.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="SS"/>
+            <display value="Social Security number"/>
+          </contains>
+          <contains>
+            <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS"/>
+            <code value="NPH-1000"/>
+            <display value="NPH Program Identifier for study 1000"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

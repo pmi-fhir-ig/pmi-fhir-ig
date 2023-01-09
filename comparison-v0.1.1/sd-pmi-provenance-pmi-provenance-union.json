@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-5",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c7f6d3b4-6ecf-4d22-8d0f-312ad2456b5a-5",
+  "id" : "66c0d367-8fec-4eb6-9760-cd3015f483d0-8",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/66c0d367-8fec-4eb6-9760-cd3015f483d0-8",
   "name" : "UnionPMIProvenanceAndPMIProvenance",
   "title" : "Union of PMI Provenance And PMI Provenance",
   "status" : "active",
-  "date" : "2023-01-09T17:01:05+00:00",
+  "date" : "2023-01-09T19:01:11+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Provenance",
