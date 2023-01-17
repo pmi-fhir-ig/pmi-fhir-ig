@@ -45,8 +45,12 @@ Description: "PMI Patient profile information which was updated by the participa
   * language = urn:ietf:bcp:47#es
 * contact[0]
   * relationship
-    * coding[CP] = http://terminology.hl7.org/CodeSystem/v2-0131#CP
-    * coding[PMI] = PMIRelationshipTypeCS#friend
+    * coding[CP]
+      * system = "http://terminology.hl7.org/CodeSystem/v2-0131"
+      * code = #CP
+    * coding[PMI]
+      * system = Canonical(PMIRelationshipTypeCS)
+      * code = #friend
   * name
     * use = #nickname
     * given[0] = "Moneypenny"
