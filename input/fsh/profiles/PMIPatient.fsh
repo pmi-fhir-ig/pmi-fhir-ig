@@ -89,8 +89,18 @@ Description: "Participant profile"
 * contact MS
   * ^short = "Secondary Contacts for the Patient"
   * ^isModifier = false
-  * relationship 0..1 MS
-  * relationship = http://terminology.hl7.org/CodeSystem/v2-0131#CP
+  * relationship
+    * coding 0..2 MS
+      * ^slicing.discriminator.type = #pattern
+      * ^slicing.discriminator.path = "system"
+      * ^slicing.rules = #closed
+    * coding contains CP 0..1 MS
+    * coding[CP]
+      * system = "http://terminology.hl7.org/CodeSystem/v2-0131"
+      * code = #CP
+    * coding contains PMI 0..1 MS
+    * coding[PMI]
+      * system = Canonical(PMIRelationshipTypeCS)
   * name 1..1 MS
   * telecom MS
   * address MS
