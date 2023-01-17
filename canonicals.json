@@ -7,6 +7,13 @@
     "name" : "PMIIdentifierTypeCS"
   },
   {
+    "id" : "PMIRelationshipTypeCS",
+    "type" : "CodeSystem",
+    "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS",
+    "version" : "0.1.1",
+    "name" : "PMIRelationshipTypeCS"
+  },
+  {
     "id" : "fhir.us.pmi.ig",
     "type" : "ImplementationGuide",
     "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ImplementationGuide/fhir.us.pmi.ig",
@@ -40,5 +47,12 @@
     "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ValueSet/PMIIdentifierTypeVS",
     "version" : "0.1.1",
     "name" : "PMIIdentifierTypeVS"
+  },
+  {
+    "id" : "PMIRelationshipTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ValueSet/PMIRelationshipTypeVS",
+    "version" : "0.1.1",
+    "name" : "PMIRelationshipTypeVS"
   }
 ]

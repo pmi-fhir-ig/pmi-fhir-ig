@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PMIRelationshipTypeCS"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">spouse<a name=\"PMIRelationshipTypeCS-spouse\"> </a></td><td>Spouse or Partner</td></tr><tr><td style=\"white-space:nowrap\">friend<a name=\"PMIRelationshipTypeCS-friend\"> </a></td><td>Friend</td></tr><tr><td style=\"white-space:nowrap\">parent<a name=\"PMIRelationshipTypeCS-parent\"> </a></td><td>Parent or Guardian</td></tr><tr><td style=\"white-space:nowrap\">child<a name=\"PMIRelationshipTypeCS-child\"> </a></td><td>Child</td></tr><tr><td style=\"white-space:nowrap\">relative<a name=\"PMIRelationshipTypeCS-relative\"> </a></td><td>Relative</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"PMIRelationshipTypeCS-other\"> </a></td><td>Relative</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.1"]; # 
+  fhir:CodeSystem.name [ fhir:value "PMIRelationshipTypeCS"]; # 
+  fhir:CodeSystem.title [ fhir:value "PMI Relationship Type Code System"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-01-17T01:07:30+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "Vibrent Health"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Vibrent Health" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://vibrenthealth.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "anaik@vibrenthealth.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Addy Naik" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "anaik@vibrenthealth.com" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ContactDetail.name [ fhir:value "Daniel Uribe" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "duribe@vibrenthealth.com" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Relationship types for the PMI Participant's secondary contacts"]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "spouse" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spouse or Partner" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "friend" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Friend" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "parent" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Parent or Guardian" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "child" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Child" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "relative" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Relative" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Relative" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

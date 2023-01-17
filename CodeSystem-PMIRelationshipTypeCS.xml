@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="PMIRelationshipTypeCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">spouse<a name="PMIRelationshipTypeCS-spouse"> </a></td><td>Spouse or Partner</td></tr><tr><td style="white-space:nowrap">friend<a name="PMIRelationshipTypeCS-friend"> </a></td><td>Friend</td></tr><tr><td style="white-space:nowrap">parent<a name="PMIRelationshipTypeCS-parent"> </a></td><td>Parent or Guardian</td></tr><tr><td style="white-space:nowrap">child<a name="PMIRelationshipTypeCS-child"> </a></td><td>Child</td></tr><tr><td style="white-space:nowrap">relative<a name="PMIRelationshipTypeCS-relative"> </a></td><td>Relative</td></tr><tr><td style="white-space:nowrap">other<a name="PMIRelationshipTypeCS-other"> </a></td><td>Relative</td></tr></table></div>
+  </text>
+  <url value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS"/>
+  <version value="0.1.1"/>
+  <name value="PMIRelationshipTypeCS"/>
+  <title value="PMI Relationship Type Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-17T01:07:30+00:00"/>
+  <publisher value="Vibrent Health"/>
+  <contact>
+    <name value="Vibrent Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vibrenthealth.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="anaik@vibrenthealth.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Addy Naik"/>
+    <telecom>
+      <system value="email"/>
+      <value value="anaik@vibrenthealth.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Daniel Uribe"/>
+    <telecom>
+      <system value="email"/>
+      <value value="duribe@vibrenthealth.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Relationship types for the PMI Participant's secondary contacts"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="spouse"/>
+    <display value="Spouse or Partner"/>
+  </concept>
+  <concept>
+    <code value="friend"/>
+    <display value="Friend"/>
+  </concept>
+  <concept>
+    <code value="parent"/>
+    <display value="Parent or Guardian"/>
+  </concept>
+  <concept>
+    <code value="child"/>
+    <display value="Child"/>
+  </concept>
+  <concept>
+    <code value="relative"/>
+    <display value="Relative"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Relative"/>
+  </concept>
+</CodeSystem>

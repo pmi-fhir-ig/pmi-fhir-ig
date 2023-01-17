@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="12b8e84a-6420-4a73-a70b-ce455bdc264a"/>
+  <id value="7ebfdfa5-0372-4f6f-aaf6-6e2cb2ef1e30"/>
   <meta>
-    <lastUpdated value="2023-01-09T19:01:04.442+00:00"/>
+    <lastUpdated value="2023-01-17T01:07:30.944+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -75,7 +75,7 @@
         <title value="PMI Identifier Type ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-01-09T19:01:04+00:00"/>
+        <date value="2023-01-17T01:07:30+00:00"/>
         <publisher value="Vibrent Health"/>
         <contact>
           <name value="Vibrent Health"/>
@@ -106,8 +106,8 @@
         </contact>
         <description value="Identifier types for the PMI Participant"/>
         <expansion>
-          <identifier value="urn:uuid:53a6c64d-524e-4542-8cba-9f7e347f3684"/>
-          <timestamp value="2023-01-09T19:01:19+00:00"/>
+          <identifier value="urn:uuid:6ac0b8ee-52a2-4793-80ad-b26c963fdb7f"/>
+          <timestamp value="2023-01-17T01:07:43+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -130,6 +130,163 @@
             <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIIdentifierTypeCS"/>
             <code value="NPH-1000"/>
             <display value="NPH Program Identifier for study 1000"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/ValueSet/PMIRelationshipTypeVS"/>
+    <resource>
+      <ValueSet>
+        <id value="PMIRelationshipTypeVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-PMIRelationshipTypeCS.html">PMI Relationship Type Code System v0.1.1 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-fhir-ig.github.io-pmi-fhir-ig-CodeSystem-PMIRelationshipTypeCS-spouse"> </a>  
+                  <a href="CodeSystem-PMIRelationshipTypeCS.html#PMIRelationshipTypeCS-spouse">spouse</a>
+                </td>
+                <td>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS</td>
+                <td>Spouse or Partner</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-fhir-ig.github.io-pmi-fhir-ig-CodeSystem-PMIRelationshipTypeCS-friend"> </a>  
+                  <a href="CodeSystem-PMIRelationshipTypeCS.html#PMIRelationshipTypeCS-friend">friend</a>
+                </td>
+                <td>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS</td>
+                <td>Friend</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-fhir-ig.github.io-pmi-fhir-ig-CodeSystem-PMIRelationshipTypeCS-parent"> </a>  
+                  <a href="CodeSystem-PMIRelationshipTypeCS.html#PMIRelationshipTypeCS-parent">parent</a>
+                </td>
+                <td>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS</td>
+                <td>Parent or Guardian</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-fhir-ig.github.io-pmi-fhir-ig-CodeSystem-PMIRelationshipTypeCS-child"> </a>  
+                  <a href="CodeSystem-PMIRelationshipTypeCS.html#PMIRelationshipTypeCS-child">child</a>
+                </td>
+                <td>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS</td>
+                <td>Child</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-fhir-ig.github.io-pmi-fhir-ig-CodeSystem-PMIRelationshipTypeCS-relative"> </a>  
+                  <a href="CodeSystem-PMIRelationshipTypeCS.html#PMIRelationshipTypeCS-relative">relative</a>
+                </td>
+                <td>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS</td>
+                <td>Relative</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---pmi-fhir-ig.github.io-pmi-fhir-ig-CodeSystem-PMIRelationshipTypeCS-other"> </a>  
+                  <a href="CodeSystem-PMIRelationshipTypeCS.html#PMIRelationshipTypeCS-other">other</a>
+                </td>
+                <td>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS</td>
+                <td>Relative</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/ValueSet/PMIRelationshipTypeVS"/>
+        <version value="0.1.1"/>
+        <name value="PMIRelationshipTypeVS"/>
+        <title value="PMI Relationship Type ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-01-17T01:07:30+00:00"/>
+        <publisher value="Vibrent Health"/>
+        <contact>
+          <name value="Vibrent Health"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://vibrenthealth.com"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="anaik@vibrenthealth.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Addy Naik"/>
+          <telecom>
+            <system value="email"/>
+            <value value="anaik@vibrenthealth.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Daniel Uribe"/>
+          <telecom>
+            <system value="email"/>
+            <value value="duribe@vibrenthealth.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Relationship types for the PMI Participant"/>
+        <expansion>
+          <identifier value="urn:uuid:110b1ff4-52a2-411f-9a5d-867a4539f559"/>
+          <timestamp value="2023-01-17T01:07:48+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS"/>
+            <code value="spouse"/>
+            <display value="Spouse or Partner"/>
+          </contains>
+          <contains>
+            <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS"/>
+            <code value="friend"/>
+            <display value="Friend"/>
+          </contains>
+          <contains>
+            <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS"/>
+            <code value="parent"/>
+            <display value="Parent or Guardian"/>
+          </contains>
+          <contains>
+            <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS"/>
+            <code value="child"/>
+            <display value="Child"/>
+          </contains>
+          <contains>
+            <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS"/>
+            <code value="relative"/>
+            <display value="Relative"/>
+          </contains>
+          <contains>
+            <system value="https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS"/>
+            <code value="other"/>
+            <display value="Relative"/>
           </contains>
         </expansion>
       </ValueSet>

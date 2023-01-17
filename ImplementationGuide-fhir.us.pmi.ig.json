@@ -9,7 +9,7 @@
   "version" : "0.1.1",
   "name" : "PMICoreIG",
   "status" : "active",
-  "date" : "2023-01-09T19:01:04+00:00",
+  "date" : "2023-01-17T01:07:30+00:00",
   "publisher" : "Vibrent Health",
   "contact" : [{
     "name" : "Vibrent Health",
@@ -697,6 +697,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PMIRelationshipTypeVS"
+      },
+      "name" : "PMI Relationship Type ValueSet",
+      "description" : "Relationship types for the PMI Participant",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -704,6 +716,18 @@
       },
       "name" : "PMI Identifier Type Code System",
       "description" : "Identifier types for the PMI Participant",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PMIRelationshipTypeCS"
+      },
+      "name" : "PMI Relationship Type Code System",
+      "description" : "Relationship types for the PMI Participant's secondary contacts",
       "exampleBoolean" : false
     },
     {

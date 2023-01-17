@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PMIRelationshipTypeVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-PMIRelationshipTypeCS.html\"><code>https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS</code></a></li></ul></div>"
+  },
+  "url" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/ValueSet/PMIRelationshipTypeVS",
+  "version" : "0.1.1",
+  "name" : "PMIRelationshipTypeVS",
+  "title" : "PMI Relationship Type ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-01-17T01:07:30+00:00",
+  "publisher" : "Vibrent Health",
+  "contact" : [{
+    "name" : "Vibrent Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vibrenthealth.com"
+    },
+    {
+      "system" : "email",
+      "value" : "anaik@vibrenthealth.com"
+    }]
+  },
+  {
+    "name" : "Addy Naik",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "anaik@vibrenthealth.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Daniel Uribe",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "duribe@vibrenthealth.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Relationship types for the PMI Participant",
+  "compose" : {
+    "include" : [{
+      "system" : "https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS"
+    }]
+  }
+}

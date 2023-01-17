@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "PMIProvenance"]; # 
   fhir:StructureDefinition.title [ fhir:value "PMI Provenance"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-01-09T19:01:04+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-01-17T01:07:30+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Vibrent Health"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;

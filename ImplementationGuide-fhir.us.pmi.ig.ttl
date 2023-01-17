@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.1"]; # 
   fhir:ImplementationGuide.name [ fhir:value "PMICoreIG"]; # 
   fhir:ImplementationGuide.status [ fhir:value "active"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-01-09T19:01:04+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-01-17T01:07:30+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Vibrent Health"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -781,6 +781,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/ValueSet/PMIRelationshipTypeVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/PMIRelationshipTypeVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Relationship Type ValueSet" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Relationship types for the PMI Participant" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -791,7 +805,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifier types for the PMI Participant" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/PMIRelationshipTypeCS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PMI Relationship Type Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Relationship types for the PMI Participant's secondary contacts" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -808,7 +836,7 @@
          fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -825,7 +853,7 @@
          fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -842,7 +870,7 @@
          fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -859,7 +887,7 @@
          fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-patient>
        ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -873,7 +901,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PMI CATI Author example to be included in the participants patient object" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -890,7 +918,7 @@
          fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance>
        ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -907,7 +935,7 @@
          fhir:link <https://pmi-fhir-ig.github.io/pmi-fhir-ig/StructureDefinition/pmi-provenance>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

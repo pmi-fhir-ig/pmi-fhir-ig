@@ -18,7 +18,7 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Emily Bond (OFFICIAL)</b> (no stated gender), DoB: 1905-08-23 ( Social Security number: 578448930 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Jim (NICKNAME)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href=\"mailto:patient@example.org\">patient@example.org</a></li><li>4114 Legato Rd Fairafx VA 22033 US (HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes: {urn:ietf:bcp:47 es}\">Spanish</span> (preferred)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient contact\">Contact</td><td colspan=\"3\"><ul><li>Moneypenny (NICKNAME)</li><li>4114 Legato Rd Fairafx VA 22033 US </li><li>ph: 2405553920(HOME)</li></ul></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Emily Bond (OFFICIAL)</b> (no stated gender), DoB: 1905-08-23 ( Social Security number: 578448930 (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Jim (NICKNAME)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 2405553920(HOME)</li><li>ph: 2405553920(HOME)</li><li><a href=\"mailto:patient@example.org\">patient@example.org</a></li><li>4114 Legato Rd Fairafx VA 22033 US (HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes: {urn:ietf:bcp:47 es}\">Spanish</span> (preferred)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Contact person\">Contact person:</td><td colspan=\"3\"><ul><li>Moneypenny (NICKNAME)</li><li>4114 Legato Rd Fairafx VA 22033 US </li><li>ph: 2405553920(HOME)</li></ul></td></tr></table></div>"
   ]; # 
   fhir:DomainResource.contained [
      a fhir:Provenance;
@@ -130,6 +130,18 @@
   ]; # 
   fhir:Patient.contact [
      fhir:index 0;
+     fhir:Patient.contact.relationship [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131" ];
+         fhir:Coding.code [ fhir:value "CP" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "https://pmi-fhir-ig.github.io/pmi-fhir-ig/CodeSystem/PMIRelationshipTypeCS" ];
+         fhir:Coding.code [ fhir:value "friend" ]
+       ]
+     ];
      fhir:Patient.contact.name [
        fhir:HumanName.use [ fhir:value "nickname" ];
        fhir:HumanName.given [
